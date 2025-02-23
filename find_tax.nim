@@ -39,9 +39,9 @@ proc `$`(hist: History): string =
     result &= hist.hist.join(", ")
     result &= fmt": total was {hist.sum()}"
 
-proc calculate_taxes(amounts: seq[float], total: float): string =
+proc calculate_taxes(amounts: seq[float], total: float, tax_rates: seq[float]): string =
     result = ""
-    let tax_multipliers = [1.100, 1.101, 1.102, 1.103]
+    let tax_multipliers = tax_rates
     for t in tax_multipliers:
         # The tax multiplier must be consistent within a history, so we only
         # define possible_hists once we are inside of the loop.
@@ -75,6 +75,7 @@ when not defined(js):
     proc main() =
         var amounts_input: string = ""
         var total_input: string = ""
+        var tax_rates_input: string = ""
         for kind, key, val in getopt():
             case kind
             of cmdEnd: break
@@ -84,6 +85,8 @@ when not defined(js):
                         echo "Amounts must be provided using e.g. --amounts=22.09,81.89,16.24"
                     elif key == "total":
                         echo "Total must be provided using e.g. --total=124.13"
+                    elif key == "tax-rates":
+                        echo "Tax rates must be provided using e.g. --tax-rates=1.100,1.101,1.102,1.103"
                     else:
                         echo "Unknown option: ", key
                 else:
@@ -91,6 +94,8 @@ when not defined(js):
                         amounts_input = val
                     elif key == "total":
                         total_input = val
+                    elif key == "tax-rates":
+                        tax_rates_input = val
                     else:
                         echo "Unknown option and value: ", key, ", ", val
             of cmdArgument:
@@ -110,6 +115,13 @@ when not defined(js):
         except ValueError:
             echo "Could not parse total"
             quit()
+        var tax_rates: seq[float]
+        let maybe_taxes = parseFloatSeq(tax_rates_input)
+        if maybe_taxes.isSome:
+            tax_rates = maybe_taxes.get()
+        else:
+            echo "Could not parse tax rates"
+            quit()
 
         # Values to be modified by the user:
         # 1. amounts: This is the list of individual amounts, NOT including tax.
@@ -124,13 +136,13 @@ when not defined(js):
         echo "====================================="
         echo "Results:"
         echo ""
-        echo calculate_taxes(amounts, total)
+        echo calculate_taxes(amounts, total, tax_rates)
 
     if isMainModule:
         main()
 
 when defined(js):
-    proc runJS(amounts_input: cstring, total_input: cstring): cstring {.exportc} =
+    proc runJS(amounts_input: cstring, total_input: cstring, tax_rates_input: cstring): cstring {.exportc} =
         var amounts: seq[float]
         let maybe_amounts = parseFloatSeq($amounts_input)
         if maybe_amounts.isSome:
@@ -142,6 +154,12 @@ when defined(js):
             total = parseFloat($total_input)
         except ValueError:
             return cstring("Could not parse total")
-        let message = "Results:\n" & calculate_taxes(amounts, total)
+        var tax_rates: seq[float]
+        let maybe_taxes = parseFloatSeq($tax_rates_input)
+        if maybe_taxes.isSome:
+            tax_rates = maybe_taxes.get()
+        else:
+            return cstring("Could not parse tax rates")
+        let message = "Results:\n" & calculate_taxes(amounts, total, tax_rates)
         return cstring(message)
 
