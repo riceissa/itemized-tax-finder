@@ -13,32 +13,29 @@ type
         tax: float
     History = object
         hist: seq[TaxedValue]
-        round_before_summing: bool
 
-func newHistory(round_before_summing: bool): History =
-    return History(hist: @[], round_before_summing: round_before_summing)
+func newHistory(): History =
+    return History(hist: @[])
 
 func with(hist: History, v: TaxedValue): History =
     var newlist = hist.hist
     newlist.add(v)
-    return History(hist: newlist, round_before_summing: hist.round_before_summing)
+    return History(hist: newlist)
 
 proc `$`(t: TaxedValue): string =
     return fmt"(${t.value} with tax x{t.tax})"
 
-func sum(hist: History): float =
+func sum(hist: History, round_before_summing: bool): float =
     var total: float = 0.0
     for v in hist.hist:
-        if hist.round_before_summing:
+        if round_before_summing:
             total += round(v.value * v.tax, 2)
         else:
             total += v.value * v.tax
     return total
 
 proc `$`(hist: History): string =
-    result = fmt"round_before_summing={hist.round_before_summing}, "
-    result &= hist.hist.join(", ")
-    result &= fmt": total was {hist.sum()}"
+    result = hist.hist.join(", ")
 
 proc calculate_taxes(amounts: seq[float], total: float, tax_rates: seq[float]): string =
     result = ""
@@ -50,7 +47,7 @@ proc calculate_taxes(amounts: seq[float], total: float, tax_rates: seq[float]): 
         # Our history initially has two branches: one that rounds each
         # computation before adding, and one that just keeps all significant
         # digits.
-        var possible_hists: seq[History] = @[newHistory(true), newHistory(false)]
+        var possible_hists: seq[History] = @[newHistory()]
         for v in amounts:
             var newhists: seq[History] = @[]
             for hist in possible_hists:
@@ -59,9 +56,14 @@ proc calculate_taxes(amounts: seq[float], total: float, tax_rates: seq[float]): 
                 newhists.add(hist.with(TaxedValue(value: v, tax: t)))
             possible_hists = newhists
         for hist in possible_hists:
-            let hist_sum = hist.sum()
-            if abs(hist_sum - total) < 0.01 - 0.00001:
-                result &= fmt"  * {hist}" & "\n"
+            for round_before_summing in [true, false]:
+                let hist_sum = hist.sum(round_before_summing)
+                if abs(hist_sum - total) < 0.01 - 0.00001:
+                    result &= "  *"
+                    result &= " round before summing? " & (if round_before_summing: "yes" else: "no")
+                    result &= fmt", {hist}"
+                    result &= fmt": total was {hist_sum}"
+                    result &= "\n"
 
 func parseFloatSeq(input: string): Result[seq[float], string] =
     var res: seq[float] = @[]
