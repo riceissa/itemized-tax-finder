@@ -3,9 +3,6 @@
 import std/strformat
 import strutils
 import math
-# import std/jsconsole
-# import std/dom
-# import std/jsffi
 
 type
     TaxedValue = object
@@ -82,14 +79,7 @@ proc main() =
     echo calculate_taxes(amounts, total)
 
 proc runJS(amounts: seq[float], total: float): cstring {.exportc} =
-    # let window {.importc}: JsObject
-    # let amounts = window.nimAmounts.to(seq[float])
-    # let total = window.nimTotal.to(float)
-    # console.log(window)
     let message = "Results:\n" & calculate_taxes(amounts, total)
-
-    # let displayResults = dom.document.getElementById("results")
-    # displayResults.textContent = cstring(message)
     return cstring(message)
 
 if isMainModule:
