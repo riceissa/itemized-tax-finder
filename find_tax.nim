@@ -125,7 +125,18 @@ proc main() =
     echo ""
     echo calculate_taxes(amounts, total)
 
-proc runJS(amounts: seq[float], total: float): cstring {.exportc} =
+proc runJS(amounts_input: cstring, total_input: cstring): cstring {.exportc} =
+    var amounts: seq[float]
+    let maybe_amounts = parseFloatSeq($amounts_input)
+    if maybe_amounts.isSome:
+        amounts = maybe_amounts.get()
+    else:
+        return cstring("Could not parse amounts")
+    var total: float
+    try:
+        total = parseFloat($total_input)
+    except ValueError:
+        return cstring("Could not parse total")
     let message = "Results:\n" & calculate_taxes(amounts, total)
     return cstring(message)
 

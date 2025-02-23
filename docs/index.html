@@ -61,24 +61,11 @@
                 document.getElementById("results").textContent = "Error: Calculator not loaded yet.";
                 return;
             }
-
             try {
                 let amountsStr = document.getElementById("amounts").value;
-                let amounts = amountsStr.split(",").map(s => parseFloat(s.trim()));
-                let total = parseFloat(document.getElementById("total").value);
-
-                if (amounts.some(isNaN) || isNaN(total)) {
-                    document.getElementById("results").textContent = "Error: Please enter valid numbers.";
-                    return;
-                }
-
-                // Pass values to the Nim function via global variables
-                // window.nimAmounts = amounts;
-                // window.nimTotal = total;
-
-                let nimResult = runJS(amounts, total);
+                let totalStr = document.getElementById("total").value;
+                let nimResult = runJS(amountsStr, totalStr);
                 document.getElementById("results").textContent = nimResult;
-
             } catch (error) {
                 document.getElementById("results").textContent = "Error: " + error.message;
             }
