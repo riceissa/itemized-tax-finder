@@ -11,13 +11,19 @@ var NTI452984835 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
 var NTI452984837 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
 var NTI452984836 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
 var NTI452984998 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
-var NTI973078548 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI452985120 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
+var NTI989855748 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI452985157 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI452985185 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
+var NTI452985184 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
+var NTI452985183 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI452985192 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI33555129 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI452985119 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
 var NTI33555132 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI33554466 = {size: 0,kind: 1,base: null,node: null,finalizer: null};
 var NTI33554435 = {size: 0,kind: 36,base: null,node: null,finalizer: null};
 var NTI452985107 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
-var NTI452985112 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI33554466 = {size: 0,kind: 1,base: null,node: null,finalizer: null};
+var NTI452985114 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
 var NTI33555114 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI33555125 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI33555128 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
@@ -70,16 +76,31 @@ NTI33555114.node = NNI33555114;
 NTI33555114.base = NTI33555112;
 NTI33555125.base = NTI33555114;
 NTI452985107.base = NTI33554435;
-var NNI452985112 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "val", len: 0, typ: NTI452985107, name: "val", sons: null}, 
-{kind: 1, offset: "has", len: 0, typ: NTI33554466, name: "has", sons: null}]};
-NTI452985112.node = NNI452985112;
+var NNI452985114 = {kind: 3, offset: "oResultPrivate", len: 2, typ: NTI33554466, name: "oResultPrivate", sons: [[setConstr(0), {kind: 1, offset: "eResultPrivate", len: 0, typ: NTI33554439, name: "eResultPrivate", sons: null}], 
+[setConstr(1), {kind: 1, offset: "vResultPrivate", len: 0, typ: NTI452985107, name: "vResultPrivate", sons: null}]]};
+NTI452985114.node = NNI452985114;
 var NNI33555132 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI33555132.node = NNI33555132;
 NTI33555132.base = NTI33555113;
-NTI452985120.base = NTI33554435;
-var NNI973078548 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI973078548.node = NNI973078548;
-NTI973078548.base = NTI33555113;
+NTI452985119.base = NTI33554435;
+var NNI33555129 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI33555129.node = NNI33555129;
+NTI33555129.base = NTI33555113;
+NTI452985184.base = NTI33554435;
+NTI452985185.base = NTI33554435;
+var NNI452985183 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI452985184, name: "Field0", sons: null}, 
+{kind: 1, offset: "Field1", len: 0, typ: NTI33554435, name: "Field1", sons: null}, 
+{kind: 1, offset: "Field2", len: 0, typ: NTI452985185, name: "Field2", sons: null}]};
+NTI452985183.node = NNI452985183;
+var NNI452985192 = {kind: 3, offset: "oResultPrivate", len: 2, typ: NTI33554466, name: "oResultPrivate", sons: [[setConstr(0), {kind: 1, offset: "eResultPrivate", len: 0, typ: NTI33554439, name: "eResultPrivate", sons: null}], 
+[setConstr(1), {kind: 1, offset: "vResultPrivate", len: 0, typ: NTI452985183, name: "vResultPrivate", sons: null}]]};
+NTI452985192.node = NNI452985192;
+var NNI452985157 = {kind: 3, offset: "oResultPrivate", len: 2, typ: NTI33554466, name: "oResultPrivate", sons: [[setConstr(0), {kind: 1, offset: "eResultPrivate", len: 0, typ: NTI33554439, name: "eResultPrivate", sons: null}], 
+[setConstr(1), {kind: 1, offset: "vResultPrivate", len: 0, typ: NTI33554435, name: "vResultPrivate", sons: null}]]};
+NTI452985157.node = NNI452985157;
+var NNI989855748 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI989855748.node = NNI989855748;
+NTI989855748.base = NTI33555113;
 NTI452984998.base = NTI33554435;
 var NNI452984835 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "value", len: 0, typ: NTI33554435, name: "value", sons: null}, 
 {kind: 1, offset: "tax", len: 0, typ: NTI33554435, name: "tax", sons: null}]};
@@ -676,12 +697,69 @@ function reraiseException() {
 
   
 }
-var ConstSet10 = setConstr(60, 62, 94);
-var ConstSet11 = setConstr(60, 62, 94);
-var ConstSet12 = setConstr(45, 43, 32);
-var ConstSet13 = setConstr([48, 57]);
-var ConstSet14 = setConstr([48, 57]);
-var ConstSet15 = setConstr([48, 57]);
+var ConstSet10 = setConstr(false);
+
+function raiseFieldError2(f_33556778, discVal_33556779) {
+    raiseException({message: (f_33556778 || []).concat(discVal_33556779 || [],makeNimstrLit("\'") || []), parent: null, m_type: NTI33555129, name: null, trace: [], up: null}, "FieldDefect");
+
+  
+}
+
+function nimBoolToStr(x_33556514) {
+  var result_33556515 = [];
+
+    if (x_33556514) {
+    result_33556515 = nimCopy(null, makeNimstrLit("true"), NTI33554439);
+    }
+    else {
+      result_33556515 = nimCopy(null, makeNimstrLit("false"), NTI33554439);
+    }
+    
+
+  return result_33556515;
+
+}
+
+function reprDiscriminant(e_33557409, typ_33557410) {
+    var Temporary1;
+
+  var result_33557411 = [];
+
+  var F = {procname: "system.reprDiscriminant", prev: framePtr, filename: "/usr/lib/nim/lib/system/repr_impl.nim", line: 0};
+  framePtr = F;
+    F.line = 12;
+    F.line = 12;
+    switch (typ_33557410.kind) {
+    case 14:
+      Temporary1 = reprEnum(e_33557409, typ_33557410);
+      break;
+    case 1:
+      Temporary1 = nimBoolToStr(!((e_33557409 == 0)));
+      break;
+    default: 
+      Temporary1 = HEX24_335544323(e_33557409);
+      break;
+    }
+    result_33557411 = nimCopy(null, Temporary1, NTI33554439);
+  framePtr = F.prev;
+
+  return result_33557411;
+
+}
+var ConstSet11 = setConstr(true);
+var ConstSet12 = setConstr(32, 9, 11, 13, 10, 12);
+var ConstSet13 = setConstr(false);
+var ConstSet14 = setConstr(true);
+var ConstSet15 = setConstr(false);
+var ConstSet16 = setConstr(true);
+var ConstSet17 = setConstr(false);
+var ConstSet18 = setConstr(true);
+var ConstSet19 = setConstr(60, 62, 94);
+var ConstSet20 = setConstr(60, 62, 94);
+var ConstSet21 = setConstr(45, 43, 32);
+var ConstSet22 = setConstr([48, 57]);
+var ConstSet23 = setConstr([48, 57]);
+var ConstSet24 = setConstr([48, 57]);
 
 function divInt(a_33556952, b_33556953) {
         if (b_33556953 == 0) raiseDivByZero();
@@ -700,23 +778,8 @@ function mulInt(a_33556948, b_33556949) {
 
   
 }
-var ConstSet16 = setConstr([65, 90], [97, 122]);
-
-function nimBoolToStr(x_33556514) {
-  var result_33556515 = [];
-
-    if (x_33556514) {
-    result_33556515 = nimCopy(null, makeNimstrLit("true"), NTI33554439);
-    }
-    else {
-      result_33556515 = nimCopy(null, makeNimstrLit("false"), NTI33554439);
-    }
-    
-
-  return result_33556515;
-
-}
-var ConstSet17 = setConstr(46, 44);
+var ConstSet25 = setConstr([65, 90], [97, 122]);
+var ConstSet26 = setConstr(46, 44);
 
 function nimCharToStr(x_33556517) {
   var result_33556518 = [];
@@ -727,8 +790,10 @@ function nimCharToStr(x_33556517) {
   return result_33556518;
 
 }
-var ConstSet18 = setConstr([65, 90]);
-var ConstSet19 = setConstr([97, 122]);
+var ConstSet27 = setConstr([65, 90]);
+var ConstSet28 = setConstr([97, 122]);
+var ConstSet29 = setConstr(true);
+var ConstSet30 = setConstr(false);
 if (!Math.trunc) {
   Math.trunc = function(v) {
     v = +v;
@@ -3392,6 +3457,297 @@ framePtr = F.prev;
 var F = {procname: "module find_tax", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module results", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module find_tax", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module find_tax", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module find_tax", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
 var F = {procname: "module find_tax", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
@@ -3499,17 +3855,17 @@ function addChars_251658415(result_251658417, result_251658417_Idx, x_251658418,
       F.line = 46;
       var iHEX60gensym4_251658435 = 0;
       F.line = 119;
-      var i_452985399 = 0;
+      var i_452985701 = 0;
       Label2: do {
         F.line = 120;
           Label3: while (true) {
-          if (!(i_452985399 < n_251658420)) break Label3;
+          if (!(i_452985701 < n_251658420)) break Label3;
             F.line = 49;
-            iHEX60gensym4_251658435 = i_452985399;
+            iHEX60gensym4_251658435 = i_452985701;
             F.line = 49;
             result_251658417[result_251658417_Idx][chckIndx(addInt(old_251658421, iHEX60gensym4_251658435), 0, (result_251658417[result_251658417_Idx]).length - 1)] = x_251658418.charCodeAt(chckIndx(addInt(start_251658419, iHEX60gensym4_251658435), 0, (x_251658418).length - 1));
             F.line = 122;
-            i_452985399 = addInt(i_452985399, 1);
+            i_452985701 = addInt(i_452985701, 1);
           }
       } while (false);
     } while (false);
@@ -3597,13 +3953,13 @@ function auxWriteStackTrace_33556559(f_33556560) {
     
     Label6: do {
       var j_33556602 = 0;
-      var colontmp__452985391 = 0;
-      colontmp__452985391 = (i_33556570 - 1);
-      var res_452985393 = colontmp__452985391;
+      var colontmp__452985693 = 0;
+      colontmp__452985693 = (i_33556570 - 1);
+      var res_452985695 = colontmp__452985693;
       Label7: do {
           Label8: while (true) {
-          if (!(0 <= res_452985393)) break Label8;
-            j_33556602 = res_452985393;
+          if (!(0 <= res_452985695)) break Label8;
+            j_33556602 = res_452985695;
             result_33556561[0].push.apply(result_33556561[0], cstrToNimstr(tempFrames_33556572[j_33556602].Field2));;
             if ((0 < tempFrames_33556572[j_33556602].Field1)) {
             result_33556561[0].push.apply(result_33556561[0], makeNimstrLit("("));;
@@ -3619,7 +3975,7 @@ function auxWriteStackTrace_33556559(f_33556560) {
             result_33556561[0].push.apply(result_33556561[0], makeNimstrLit(" at "));;
             add_33556419(result_33556561, 0, tempFrames_33556572[j_33556602].Field0);
             result_33556561[0].push.apply(result_33556561[0], makeNimstrLit("\x0A"));;
-            res_452985393 -= 1;
+            res_452985695 -= 1;
           }
       } while (false);
     } while (false);
@@ -3738,21 +4094,21 @@ function substr_33557906(s_33557907, first_33557908, last_33557909) {
       F.line = 3068;
       var i_33557917 = 0;
       F.line = 75;
-      var colontmp__452985404 = 0;
+      var colontmp__452985706 = 0;
       F.line = 3068;
-      colontmp__452985404 = subInt(L_33557912, 1);
+      colontmp__452985706 = subInt(L_33557912, 1);
       F.line = 90;
-      var res_452985405 = 0;
+      var res_452985707 = 0;
       Label2: do {
         F.line = 91;
           Label3: while (true) {
-          if (!(res_452985405 <= colontmp__452985404)) break Label3;
+          if (!(res_452985707 <= colontmp__452985706)) break Label3;
             F.line = 3068;
-            i_33557917 = res_452985405;
+            i_33557917 = res_452985707;
             F.line = 3068;
             result_33557910[chckIndx(i_33557917, 0, (result_33557910).length - 1)] = s_33557907[chckIndx(addInt(i_33557917, first_33557911), 0, (s_33557907).length - 1)];
             F.line = 93;
-            res_452985405 = addInt(res_452985405, 1);
+            res_452985707 = addInt(res_452985707, 1);
           }
       } while (false);
     } while (false);
@@ -3861,79 +4217,65 @@ function nsuStrip(s_671090899, leading_671090900, trailing_671090901, chars_6710
 
 }
 
-function none_452985253() {
-  var result_452985260 = ({val: [], has: false});
-
-  var F = {procname: "none.none", prev: framePtr, filename: "/usr/lib/nim/lib/pure/options.nim", line: 0};
-  framePtr = F;
-  framePtr = F.prev;
-
-  return result_452985260;
-
-}
-
 function isNimException_33556519() {
     return lastJSError && lastJSError.m_type;
 
   
 }
 
-function some_452985261(val_452985263) {
-  var result_452985264 = ({val: [], has: false});
+function getCurrentException() {
+  var result_33556522 = null;
 
-  var F = {procname: "some.some", prev: framePtr, filename: "/usr/lib/nim/lib/pure/options.nim", line: 0};
-  framePtr = F;
-    F.line = 136;
-    result_452985264.has = true;
-    F.line = 137;
-    result_452985264.val = nimCopy(null, val_452985263, NTI452985120);
-  framePtr = F.prev;
+    if (isNimException_33556519()) {
+    result_33556522 = lastJSError;
+    }
+    
 
-  return result_452985264;
+  return result_33556522;
 
 }
 
-function parseFloatSeq_452985235(input_452985236) {
-  var result_452985242 = ({val: [], has: false});
+function parseFloatSeq_452985236(input_452985237) {
+  var result_452985245 = ({oResultPrivate: false, eResultPrivate: [], vResultPrivate: []});
 
   var F = {procname: "find_tax.parseFloatSeq", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
   framePtr = F;
   BeforeRet: do {
-    F.line = 66;
-    var res_452985247 = [];
+    F.line = 67;
+    var res_452985250 = [];
     Label1: do {
-      F.line = 67;
-      var x_452985248 = [];
+      F.line = 68;
+      var x_452985251 = [];
       F.line = 366;
-      var lastHEX60gensym40_452985382 = 0;
+      var lastHEX60gensym40_452985684 = 0;
       F.line = 367;
-      var splitsHEX60gensym40_452985383 = -1;
+      var splitsHEX60gensym40_452985685 = -1;
       Label2: do {
         F.line = 500;
           Label3: while (true) {
-          if (!(lastHEX60gensym40_452985382 <= (input_452985236).length)) break Label3;
+          if (!(lastHEX60gensym40_452985684 <= (input_452985237).length)) break Label3;
             F.line = 370;
-            var firstHEX60gensym40_452985385 = lastHEX60gensym40_452985382;
+            var firstHEX60gensym40_452985687 = lastHEX60gensym40_452985684;
             Label4: do {
               F.line = 371;
                 Label5: while (true) {
-                if (!((lastHEX60gensym40_452985382 < (input_452985236).length) && !(substrEq_671088869(input_452985236, lastHEX60gensym40_452985382, makeNimstrLit(","))))) break Label5;
+                if (!((lastHEX60gensym40_452985684 < (input_452985237).length) && !(substrEq_671088869(input_452985237, lastHEX60gensym40_452985684, makeNimstrLit(","))))) break Label5;
                   F.line = 372;
-                  lastHEX60gensym40_452985382 = addInt(lastHEX60gensym40_452985382, 1);
+                  lastHEX60gensym40_452985684 = addInt(lastHEX60gensym40_452985684, 1);
                 }
             } while (false);
-            if ((splitsHEX60gensym40_452985383 == 0)) {
+            if ((splitsHEX60gensym40_452985685 == 0)) {
             F.line = 373;
-            lastHEX60gensym40_452985382 = (input_452985236).length;
+            lastHEX60gensym40_452985684 = (input_452985237).length;
             }
             
-            F.line = 67;
-            x_452985248 = substr_33557906(input_452985236, firstHEX60gensym40_452985385, subInt(lastHEX60gensym40_452985382, 1));
-            F.line = 67;
+            F.line = 68;
+            x_452985251 = substr_33557906(input_452985237, firstHEX60gensym40_452985687, subInt(lastHEX60gensym40_452985684, 1));
+            F.line = 68;
 ++excHandler;
             try {
-            F.line = 67;
-            res_452985247.push(nsuParseFloat(nsuStrip(x_452985248, true, true, ConstSet9)));;
+            F.line = 68;
+            res_452985250.push(nsuParseFloat(nsuStrip(x_452985251, true, true, ConstSet9)));;
 --excHandler;
 } catch (EXCEPTION) {
  var prevJSError = lastJSError;
@@ -3941,8 +4283,10 @@ function parseFloatSeq_452985235(input_452985236) {
  --excHandler;
             framePtr = F;
             if (lastJSError && (isObj(lastJSError.m_type, NTI33555125))) {
-            F.line = 71;
-            result_452985242 = nimCopy(result_452985242, none_452985253(), NTI452985112);
+            F.line = 72;
+            var e_452985256 = getCurrentException();
+            F.line = 72;
+            result_452985245 = nimCopy(result_452985245, {oResultPrivate: false, eResultPrivate: nimCopy(null, e_452985256.message, NTI33554439), vResultPrivate: []}, NTI452985114);
             break BeforeRet;
             }
             else {
@@ -3952,106 +4296,264 @@ function parseFloatSeq_452985235(input_452985236) {
             } finally {
             framePtr = F;
             }
-            if ((splitsHEX60gensym40_452985383 == 0)) {
+            if ((splitsHEX60gensym40_452985685 == 0)) {
             F.line = 375;
             break Label2;
             }
             
             F.line = 376;
-            splitsHEX60gensym40_452985383 = subInt(splitsHEX60gensym40_452985383, 1);
+            splitsHEX60gensym40_452985685 = subInt(splitsHEX60gensym40_452985685, 1);
             F.line = 377;
-            lastHEX60gensym40_452985382 = addInt(lastHEX60gensym40_452985382, 1);
+            lastHEX60gensym40_452985684 = addInt(lastHEX60gensym40_452985684, 1);
           }
       } while (false);
     } while (false);
-    F.line = 72;
-    result_452985242 = nimCopy(result_452985242, some_452985261(res_452985247), NTI452985112);
+    F.line = 73;
+    result_452985245 = nimCopy(result_452985245, {oResultPrivate: true, vResultPrivate: nimCopy(null, res_452985250, NTI452985119), eResultPrivate: []}, NTI452985114);
     break BeforeRet;
   } while (false);
   framePtr = F.prev;
 
-  return result_452985242;
+  return result_452985245;
 
 }
 
-function isSome_452985295(self_452985297) {
-  var result_452985298 = false;
+function reprEnum(e_33557385, typ_33557386) {
+  var result_33557387 = [];
 
-  var F = {procname: "isSome.isSome", prev: framePtr, filename: "/usr/lib/nim/lib/pure/options.nim", line: 0};
+  var F = {procname: "system.reprEnum", prev: framePtr, filename: "/usr/lib/nim/lib/system/reprjs.nim", line: 0};
   framePtr = F;
-    F.line = 157;
-    result_452985298 = self_452985297.has;
+    F.line = 25;
+    var tmp_33557388 = false;
+    F.line = 26;
+    var item_33557389 = typ_33557386.node.sons[e_33557385];
+    F.line = 27;
+    tmp_33557388 = item_33557389 !== undefined
+    if (tmp_33557388) {
+    F.line = 29;
+    result_33557387 = nimCopy(null, makeNimstrLit(item_33557389.name), NTI33554439);
+    }
+    else {
+      F.line = 31;
+      result_33557387 = nimCopy(null, (HEX24_335544323(e_33557385) || []).concat(makeNimstrLit(" (invalid data!)") || []), NTI33554439);
+    }
+    
+  framePtr = F.prev;
+
+  return result_33557387;
+
+}
+
+function parseSingleFloat_452985289(input_452985290) {
+  var result_452985298 = ({oResultPrivate: false, eResultPrivate: [], vResultPrivate: 0.0});
+
+  var F = {procname: "find_tax.parseSingleFloat", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
+  framePtr = F;
+  BeforeRet: do {
+    F.line = 76;
+++excHandler;
+    try {
+    F.line = 77;
+    var parsed_452985299 = nsuParseFloat(nsuStrip(input_452985290, true, true, ConstSet12));
+    F.line = 78;
+    result_452985298 = nimCopy(result_452985298, {oResultPrivate: true, vResultPrivate: parsed_452985299, eResultPrivate: []}, NTI452985157);
+    break BeforeRet;
+--excHandler;
+} catch (EXCEPTION) {
+ var prevJSError = lastJSError;
+ lastJSError = EXCEPTION;
+ --excHandler;
+    framePtr = F;
+    if (lastJSError && (isObj(lastJSError.m_type, NTI33555125))) {
+    F.line = 80;
+    var e_452985304 = getCurrentException();
+    F.line = 80;
+    result_452985298 = nimCopy(result_452985298, {oResultPrivate: false, eResultPrivate: nimCopy(null, e_452985304.message, NTI33554439), vResultPrivate: 0.0}, NTI452985157);
+    break BeforeRet;
+    }
+    else {
+    	reraiseException();
+    }
+    lastJSError = prevJSError;
+    } finally {
+    framePtr = F;
+    }
+  } while (false);
   framePtr = F.prev;
 
   return result_452985298;
 
 }
 
-function isNone_452985320(self_452985322) {
-  var result_452985323 = false;
+function parse_input_452985324(amounts_input_452985325, total_input_452985326, tax_rates_input_452985327) {
+    var Temporary1;
+      var Temporary2;
+      var Temporary3;
+    var Temporary4;
+      var Temporary5;
+      var Temporary6;
+    var Temporary7;
+      var Temporary8;
+      var Temporary9;
 
-  var F = {procname: "isNone.isNone", prev: framePtr, filename: "/usr/lib/nim/lib/pure/options.nim", line: 0};
+  var result_452985335 = ({oResultPrivate: false, eResultPrivate: [], vResultPrivate: {Field0: [], Field1: 0.0, Field2: []}});
+
+  var F = {procname: "find_tax.parse_input", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
   framePtr = F;
-    F.line = 172;
-    result_452985323 = !(self_452985322.has);
-  framePtr = F.prev;
-
-  return result_452985323;
-
-}
-
-function get_452985312(self_452985314) {
-  var result_452985315 = [];
-
-  var F = {procname: "get.get", prev: framePtr, filename: "/usr/lib/nim/lib/pure/options.nim", line: 0};
-  framePtr = F;
-    if (isNone_452985320(self_452985314)) {
-    F.line = 198;
-    raiseException({message: makeNimstrLit("Can\'t obtain a value from a `none`"), parent: null, m_type: NTI973078548, name: null, trace: [], up: null}, "UnpackDefect");
+  BeforeRet: do {
+    F.line = 83;
+    F.line = 1544;
+    var vHEX60gensym21_452985339 = parseFloatSeq_452985236(amounts_input_452985325);
+    F.line = 83;
+    switch (vHEX60gensym21_452985339.oResultPrivate) {
+    case false:
+      F.line = 1560;
+      var Temporary2 = vHEX60gensym21_452985339;
+      if (ConstSet10[Temporary2.oResultPrivate]===undefined) { raiseFieldError2(makeNimstrLit("field \'eResultPrivate\' is not accessible for type \'Result\' using \'oResultPrivate = "), reprDiscriminant(Temporary2.oResultPrivate, NTI33554466)); }
+      result_452985335 = nimCopy(result_452985335, {oResultPrivate: false, eResultPrivate: nimCopy(null, Temporary2.eResultPrivate, NTI33554439), vResultPrivate: {Field0: [], Field1: 0.0, Field2: []}}, NTI452985192);
+      F.line = 1561;
+      break BeforeRet;
+      break;
+    case true:
+      var Temporary3 = vHEX60gensym21_452985339;
+      if (ConstSet11[Temporary3.oResultPrivate]===undefined) { raiseFieldError2(makeNimstrLit("field \'vResultPrivate\' is not accessible for type \'Result\' using \'oResultPrivate = "), reprDiscriminant(Temporary3.oResultPrivate, NTI33554466)); }
+      Temporary1 = Temporary3.vResultPrivate;
+      break;
+    default: 
+      break;
     }
-    
-    F.line = 199;
-    result_452985315 = self_452985314["val"];
+    var amounts_452985343 = nimCopy(null, Temporary1, NTI452985107);
+    F.line = 84;
+    F.line = 1544;
+    var vHEX60gensym23_452985347 = parseSingleFloat_452985289(total_input_452985326);
+    F.line = 84;
+    switch (vHEX60gensym23_452985347.oResultPrivate) {
+    case false:
+      F.line = 1560;
+      var Temporary5 = vHEX60gensym23_452985347;
+      if (ConstSet13[Temporary5.oResultPrivate]===undefined) { raiseFieldError2(makeNimstrLit("field \'eResultPrivate\' is not accessible for type \'Result\' using \'oResultPrivate = "), reprDiscriminant(Temporary5.oResultPrivate, NTI33554466)); }
+      result_452985335 = nimCopy(result_452985335, {oResultPrivate: false, eResultPrivate: nimCopy(null, Temporary5.eResultPrivate, NTI33554439), vResultPrivate: {Field0: [], Field1: 0.0, Field2: []}}, NTI452985192);
+      F.line = 1561;
+      break BeforeRet;
+      break;
+    case true:
+      var Temporary6 = vHEX60gensym23_452985347;
+      if (ConstSet14[Temporary6.oResultPrivate]===undefined) { raiseFieldError2(makeNimstrLit("field \'vResultPrivate\' is not accessible for type \'Result\' using \'oResultPrivate = "), reprDiscriminant(Temporary6.oResultPrivate, NTI33554466)); }
+      Temporary4 = Temporary6.vResultPrivate;
+      break;
+    default: 
+      break;
+    }
+    var total_452985351 = Temporary4;
+    F.line = 85;
+    F.line = 1544;
+    var vHEX60gensym25_452985355 = parseFloatSeq_452985236(tax_rates_input_452985327);
+    F.line = 85;
+    switch (vHEX60gensym25_452985355.oResultPrivate) {
+    case false:
+      F.line = 1560;
+      var Temporary8 = vHEX60gensym25_452985355;
+      if (ConstSet15[Temporary8.oResultPrivate]===undefined) { raiseFieldError2(makeNimstrLit("field \'eResultPrivate\' is not accessible for type \'Result\' using \'oResultPrivate = "), reprDiscriminant(Temporary8.oResultPrivate, NTI33554466)); }
+      result_452985335 = nimCopy(result_452985335, {oResultPrivate: false, eResultPrivate: nimCopy(null, Temporary8.eResultPrivate, NTI33554439), vResultPrivate: {Field0: [], Field1: 0.0, Field2: []}}, NTI452985192);
+      F.line = 1561;
+      break BeforeRet;
+      break;
+    case true:
+      var Temporary9 = vHEX60gensym25_452985355;
+      if (ConstSet16[Temporary9.oResultPrivate]===undefined) { raiseFieldError2(makeNimstrLit("field \'vResultPrivate\' is not accessible for type \'Result\' using \'oResultPrivate = "), reprDiscriminant(Temporary9.oResultPrivate, NTI33554466)); }
+      Temporary7 = Temporary9.vResultPrivate;
+      break;
+    default: 
+      break;
+    }
+    var tax_rates_452985359 = nimCopy(null, Temporary7, NTI452985107);
+    F.line = 86;
+    var res_452985364 = nimCopy(null, {oResultPrivate: true, vResultPrivate: nimCopy(null, {Field0: nimCopy(null, amounts_452985343, NTI452985184), Field1: total_452985351, Field2: nimCopy(null, tax_rates_452985359, NTI452985185)}, NTI452985183), eResultPrivate: []}, NTI452985192);
+    F.line = 87;
+    result_452985335 = nimCopy(result_452985335, res_452985364, NTI452985192);
+    break BeforeRet;
+  } while (false);
   framePtr = F.prev;
 
-  return result_452985315;
+  return result_452985335;
 
 }
 
-function newHistory_452984844(round_before_summing_452984845) {
-  var result_452984846 = ({hist: [], round_before_summing: false});
+function raiseResultDefect_452985447(m_452985449, v_452985450) {
+  var F = {procname: "raiseResultDefect.raiseResultDefect", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+  framePtr = F;
+    F.line = 433;
+    raiseException({message: (m_452985449 || []).concat(makeNimstrLit(": ") || [],v_452985450 || []), m_type: NTI989855748, parent: null, name: null, trace: [], up: null}, "ResultDefect");
+  framePtr = F.prev;
+
+  
+}
+
+function value_452985440(self_452985443) {
+      var Temporary1;
+      var Temporary2;
+
+  var result_452985444 = {Field0: [], Field1: 0.0, Field2: []};
+
+  var F = {procname: "value.value", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+  framePtr = F;
+    F.line = 874;
+    switch (self_452985443.oResultPrivate) {
+    case false:
+      F.line = 445;
+      var Temporary1 = self_452985443;
+      if (ConstSet17[Temporary1.oResultPrivate]===undefined) { raiseFieldError2(makeNimstrLit("field \'eResultPrivate\' is not accessible for type \'Result\' using \'oResultPrivate = "), reprDiscriminant(Temporary1.oResultPrivate, NTI33554466)); }
+      raiseResultDefect_452985447(makeNimstrLit("Trying to access value with err Result"), Temporary1.eResultPrivate);
+      break;
+    case true:
+      F.line = 879;
+      var Temporary2 = self_452985443;
+      if (ConstSet18[Temporary2.oResultPrivate]===undefined) { raiseFieldError2(makeNimstrLit("field \'vResultPrivate\' is not accessible for type \'Result\' using \'oResultPrivate = "), reprDiscriminant(Temporary2.oResultPrivate, NTI33554466)); }
+      result_452985444 = nimCopy(result_452985444, Temporary2.vResultPrivate, NTI452985183);
+      break;
+    default: 
+      break;
+    }
+  framePtr = F.prev;
+
+  return result_452985444;
+
+}
+
+function newHistory_452984845(round_before_summing_452984846) {
+  var result_452984847 = ({hist: [], round_before_summing: false});
 
   var F = {procname: "find_tax.newHistory", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
   framePtr = F;
   BeforeRet: do {
-    F.line = 18;
-    result_452984846 = nimCopy(result_452984846, {hist: [], round_before_summing: round_before_summing_452984845}, NTI452984836);
+    F.line = 19;
+    result_452984847 = nimCopy(result_452984847, {hist: [], round_before_summing: round_before_summing_452984846}, NTI452984836);
     break BeforeRet;
   } while (false);
   framePtr = F.prev;
 
-  return result_452984846;
+  return result_452984847;
 
 }
 
-function with_452984878(hist_452984879, v_452984880) {
-  var result_452984881 = ({hist: [], round_before_summing: false});
+function with_452984879(hist_452984880, v_452984881) {
+  var result_452984882 = ({hist: [], round_before_summing: false});
 
   var F = {procname: "find_tax.with", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
   framePtr = F;
   BeforeRet: do {
-    F.line = 21;
-    var newlist_452984882 = nimCopy(null, hist_452984879.hist, NTI452984837);
     F.line = 22;
-    var Temporary1 = nimCopy(null, v_452984880, NTI452984835);
-    newlist_452984882.push(Temporary1);;
+    var newlist_452984883 = nimCopy(null, hist_452984880.hist, NTI452984837);
     F.line = 23;
-    result_452984881 = nimCopy(result_452984881, {hist: nimCopy(null, newlist_452984882, NTI452984837), round_before_summing: hist_452984879.round_before_summing}, NTI452984836);
+    var Temporary1 = nimCopy(null, v_452984881, NTI452984835);
+    newlist_452984883.push(Temporary1);;
+    F.line = 24;
+    result_452984882 = nimCopy(result_452984882, {hist: nimCopy(null, newlist_452984883, NTI452984837), round_before_summing: hist_452984880.round_before_summing}, NTI452984836);
     break BeforeRet;
   } while (false);
   framePtr = F.prev;
 
-  return result_452984881;
+  return result_452984882;
 
 }
 
@@ -4095,84 +4597,84 @@ function HEX2BHEX3D_671090727(x_671090729, x_671090729_Idx, y_671090730) {
   
 }
 
-function HEX2DHEX3D_452985004(x_452985006, x_452985006_Idx, y_452985007) {
+function HEX2DHEX3D_452985005(x_452985007, x_452985007_Idx, y_452985008) {
   var F = {procname: "-=.-=", prev: framePtr, filename: "/usr/lib/nim/lib/system.nim", line: 0};
   framePtr = F;
     F.line = 2718;
-    x_452985006[x_452985006_Idx] = (x_452985006[x_452985006_Idx] - y_452985007);
+    x_452985007[x_452985007_Idx] = (x_452985007[x_452985007_Idx] - y_452985008);
   framePtr = F.prev;
 
   
 }
 
-function round_452985000(x_452985002) {
-  var result_452985003 = [0.0];
+function round_452985001(x_452985003) {
+  var result_452985004 = [0.0];
 
-    if ((0.0 <= x_452985002)) {
-    result_452985003[0] = Math.round(x_452985002);
+    if ((0.0 <= x_452985003)) {
+    result_452985004[0] = Math.round(x_452985003);
     }
     else {
-      result_452985003[0] = Math.ceil(x_452985002);
-      if ((0.5 <= (result_452985003[0] - x_452985002))) {
-      HEX2DHEX3D_452985004(result_452985003, 0, 1.0);
+      result_452985004[0] = Math.ceil(x_452985003);
+      if ((0.5 <= (result_452985004[0] - x_452985003))) {
+      HEX2DHEX3D_452985005(result_452985004, 0, 1.0);
       }
       
     }
     
 
-  return result_452985003[0];
+  return result_452985004[0];
 
 }
 
-function round_452984995(x_452984997, places_452984998) {
-  var result_452984999 = 0.0;
+function round_452984996(x_452984998, places_452984999) {
+  var result_452985000 = 0.0;
 
-    if ((places_452984998 == 0)) {
-    result_452984999 = round_452985000(x_452984997);
+    if ((places_452984999 == 0)) {
+    result_452985000 = round_452985001(x_452984998);
     }
     else {
-      var mult_452985008 = Math.pow(10.0, places_452984998);
-      result_452984999 = (round_452985000((x_452984997 * mult_452985008)) / mult_452985008);
+      var mult_452985009 = Math.pow(10.0, places_452984999);
+      result_452985000 = (round_452985001((x_452984998 * mult_452985009)) / mult_452985009);
     }
     
 
-  return result_452984999;
+  return result_452985000;
 
 }
 
-function sum_452984969(hist_452984970) {
-  var result_452984971 = 0.0;
+function sum_452984970(hist_452984971) {
+  var result_452984972 = 0.0;
 
   var F = {procname: "find_tax.sum", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
   framePtr = F;
   BeforeRet: do {
-    F.line = 29;
-    var total_452984972 = [0.0];
+    F.line = 30;
+    var total_452984973 = [0.0];
     Label1: do {
-      F.line = 30;
-      var v_452984994 = ({value: 0.0, tax: 0.0});
+      F.line = 31;
+      var v_452984995 = ({value: 0.0, tax: 0.0});
       F.line = 235;
-      var i_452985436 = 0;
+      var i_452985738 = 0;
       F.line = 236;
-      var L_452985437 = (hist_452984970.hist).length;
+      var L_452985739 = (hist_452984971.hist).length;
       Label2: do {
         F.line = 237;
           Label3: while (true) {
-          if (!(i_452985436 < L_452985437)) break Label3;
-            F.line = 30;
-            v_452984994 = hist_452984970.hist[chckIndx(i_452985436, 0, (hist_452984970.hist).length - 1)];
-            if (hist_452984970.round_before_summing) {
-            F.line = 32;
-            HEX2BHEX3D_671090727(total_452984972, 0, round_452984995((v_452984994.value * v_452984994.tax), 2));
+          if (!(i_452985738 < L_452985739)) break Label3;
+            F.line = 31;
+            v_452984995 = hist_452984971.hist[chckIndx(i_452985738, 0, (hist_452984971.hist).length - 1)];
+            if (hist_452984971.round_before_summing) {
+            F.line = 33;
+            HEX2BHEX3D_671090727(total_452984973, 0, round_452984996((v_452984995.value * v_452984995.tax), 2));
             }
             else {
-              F.line = 34;
-            HEX2BHEX3D_671090727(total_452984972, 0, (v_452984994.value * v_452984994.tax));
+              F.line = 35;
+            HEX2BHEX3D_671090727(total_452984973, 0, (v_452984995.value * v_452984995.tax));
             }
             
             F.line = 239;
-            i_452985436 = addInt(i_452985436, 1);
-            if (!(((hist_452984970.hist).length == L_452985437))) {
+            i_452985738 = addInt(i_452985738, 1);
+            if (!(((hist_452984971.hist).length == L_452985739))) {
             F.line = 240;
             failedAssertImpl_218103864(makeNimstrLit("/usr/lib/nim/lib/system/iterators.nim(240, 11) `len(a) == L` the length of the seq changed while iterating over it"));
             }
@@ -4180,13 +4682,13 @@ function sum_452984969(hist_452984970) {
           }
       } while (false);
     } while (false);
-    F.line = 35;
-    result_452984971 = total_452984972[0];
+    F.line = 36;
+    result_452984972 = total_452984973[0];
     break BeforeRet;
   } while (false);
   framePtr = F.prev;
 
-  return result_452984971;
+  return result_452984972;
 
 }
 
@@ -4220,13 +4722,13 @@ function parseSaturatedNatural_620757308(s_620757309, b_620757310, b_620757310_I
     i_620757313 = addInt(i_620757313, 1);
     }
     
-      if (!(i_620757313 < (s_620757309).length)) Temporary1 = false; else {        Temporary1 = (ConstSet14[s_620757309[chckIndx(i_620757313, 0, (s_620757309).length - 1)]] != undefined);      }    if (Temporary1) {
+      if (!(i_620757313 < (s_620757309).length)) Temporary1 = false; else {        Temporary1 = (ConstSet23[s_620757309[chckIndx(i_620757313, 0, (s_620757309).length - 1)]] != undefined);      }    if (Temporary1) {
     F.line = 508;
     b_620757310[b_620757310_Idx] = 0;
     Label2: do {
       F.line = 509;
         Label3: while (true) {
-          if (!(i_620757313 < (s_620757309).length)) Temporary4 = false; else {            Temporary4 = (ConstSet15[s_620757309[chckIndx(i_620757313, 0, (s_620757309).length - 1)]] != undefined);          }        if (!Temporary4) break Label3;
+          if (!(i_620757313 < (s_620757309).length)) Temporary4 = false; else {            Temporary4 = (ConstSet24[s_620757309[chckIndx(i_620757313, 0, (s_620757309).length - 1)]] != undefined);          }        if (!Temporary4) break Label3;
           F.line = 510;
           var c_620757332 = subInt(s_620757309[chckIndx(i_620757313, 0, (s_620757309).length - 1)], 48);
           if ((b_620757310[b_620757310_Idx] <= divInt(subInt(2147483647, c_620757332), 10))) {
@@ -4275,17 +4777,17 @@ function HEX5BHEX5D_637537451(s_637537454, x_637537455) {
       F.line = 2562;
       var i_637537465 = 0;
       F.line = 119;
-      var i_452985442 = 0;
+      var i_452985744 = 0;
       Label2: do {
         F.line = 120;
           Label3: while (true) {
-          if (!(i_452985442 < L_637537460)) break Label3;
+          if (!(i_452985744 < L_637537460)) break Label3;
             F.line = 2562;
-            i_637537465 = i_452985442;
+            i_637537465 = i_452985744;
             F.line = 2562;
             result_637537456[chckIndx(i_637537465, 0, (result_637537456).length - 1)] = s_637537454[chckIndx(addInt(i_637537465, a_637537458), 0, (s_637537454).length - 1)];
             F.line = 122;
-            i_452985442 = addInt(i_452985442, 1);
+            i_452985744 = addInt(i_452985744, 1);
           }
       } while (false);
     } while (false);
@@ -4325,7 +4827,7 @@ function parseStandardFormatSpecifier_587202618(s_587202619, start_587202620, ig
     result_587202622.sign = 45;
     F.line = 433;
     var i_587202624 = start_587202620;
-    if (((addInt(i_587202624, 1) < (s_587202619).length) && (ConstSet10[s_587202619[chckIndx(addInt(i_587202624, 1), 0, (s_587202619).length - 1)]] != undefined))) {
+    if (((addInt(i_587202624, 1) < (s_587202619).length) && (ConstSet19[s_587202619[chckIndx(addInt(i_587202624, 1), 0, (s_587202619).length - 1)]] != undefined))) {
     F.line = 435;
     result_587202622.fill = s_587202619[chckIndx(i_587202624, 0, (s_587202619).length - 1)];
     F.line = 436;
@@ -4334,14 +4836,14 @@ function parseStandardFormatSpecifier_587202618(s_587202619, start_587202620, ig
     i_587202624 = addInt(i_587202624, 2);
     }
     else {
-    if (((i_587202624 < (s_587202619).length) && (ConstSet11[s_587202619[chckIndx(i_587202624, 0, (s_587202619).length - 1)]] != undefined))) {
+    if (((i_587202624 < (s_587202619).length) && (ConstSet20[s_587202619[chckIndx(i_587202624, 0, (s_587202619).length - 1)]] != undefined))) {
     F.line = 439;
     result_587202622.align = s_587202619[chckIndx(i_587202624, 0, (s_587202619).length - 1)];
     F.line = 440;
     i_587202624 = addInt(i_587202624, 1);
     }
     }
-    if (((i_587202624 < (s_587202619).length) && (ConstSet12[s_587202619[chckIndx(i_587202624, 0, (s_587202619).length - 1)]] != undefined))) {
+    if (((i_587202624 < (s_587202619).length) && (ConstSet21[s_587202619[chckIndx(i_587202624, 0, (s_587202619).length - 1)]] != undefined))) {
     F.line = 443;
     result_587202622.sign = s_587202619[chckIndx(i_587202624, 0, (s_587202619).length - 1)];
     F.line = 444;
@@ -4355,7 +4857,7 @@ function parseStandardFormatSpecifier_587202618(s_587202619, start_587202620, ig
     i_587202624 = addInt(i_587202624, 1);
     }
     
-      if (!((addInt(i_587202624, 1) < (s_587202619).length) && (s_587202619[chckIndx(i_587202624, 0, (s_587202619).length - 1)] == 48))) Temporary1 = false; else {        Temporary1 = (ConstSet13[s_587202619[chckIndx(addInt(i_587202624, 1), 0, (s_587202619).length - 1)]] != undefined);      }    if (Temporary1) {
+      if (!((addInt(i_587202624, 1) < (s_587202619).length) && (s_587202619[chckIndx(i_587202624, 0, (s_587202619).length - 1)] == 48))) Temporary1 = false; else {        Temporary1 = (ConstSet22[s_587202619[chckIndx(addInt(i_587202624, 1), 0, (s_587202619).length - 1)]] != undefined);      }    if (Temporary1) {
     F.line = 451;
     result_587202622.padWithZero = true;
     F.line = 452;
@@ -4379,7 +4881,7 @@ function parseStandardFormatSpecifier_587202618(s_587202619, start_587202620, ig
       result_587202622.precision = -1;
     }
     
-      if (!(i_587202624 < (s_587202619).length)) Temporary2 = false; else {        Temporary2 = (ConstSet16[s_587202619[chckIndx(i_587202624, 0, (s_587202619).length - 1)]] != undefined);      }    if (Temporary2) {
+      if (!(i_587202624 < (s_587202619).length)) Temporary2 = false; else {        Temporary2 = (ConstSet25[s_587202619[chckIndx(i_587202624, 0, (s_587202619).length - 1)]] != undefined);      }    if (Temporary2) {
     F.line = 464;
     result_587202622.typ = s_587202619[chckIndx(i_587202624, 0, (s_587202619).length - 1)];
     F.line = 465;
@@ -4636,21 +5138,21 @@ function nsuRepeatChar(c_671089659, count_671089660) {
       F.line = 1265;
       var i_671089666 = 0;
       F.line = 75;
-      var colontmp__452985448 = 0;
+      var colontmp__452985750 = 0;
       F.line = 1265;
-      colontmp__452985448 = subInt(count_671089660, 1);
+      colontmp__452985750 = subInt(count_671089660, 1);
       F.line = 90;
-      var res_452985449 = 0;
+      var res_452985751 = 0;
       Label2: do {
         F.line = 91;
           Label3: while (true) {
-          if (!(res_452985449 <= colontmp__452985448)) break Label3;
+          if (!(res_452985751 <= colontmp__452985750)) break Label3;
             F.line = 1265;
-            i_671089666 = res_452985449;
+            i_671089666 = res_452985751;
             F.line = 1265;
             result_671089661[chckIndx(i_671089666, 0, (result_671089661).length - 1)] = c_671089659;
             F.line = 93;
-            res_452985449 = addInt(res_452985449, 1);
+            res_452985751 = addInt(res_452985751, 1);
           }
       } while (false);
     } while (false);
@@ -4744,11 +5246,11 @@ function formatValue_587202722(result_587202723, result_587202723_Idx, value_587
   
 }
 
-function formatValue_452985037(result_452985039, result_452985039_Idx, value_452985040, specifier_452985041) {
+function formatValue_452985038(result_452985040, result_452985040_Idx, value_452985041, specifier_452985042) {
   var F = {procname: "formatValue.formatValue", prev: framePtr, filename: "/usr/lib/nim/lib/pure/strformat.nim", line: 0};
   framePtr = F;
     F.line = 568;
-    formatValue_587202722(result_452985039, result_452985039_Idx, nimBoolToStr(value_452985040), specifier_452985041);
+    formatValue_587202722(result_452985040, result_452985040_Idx, nimBoolToStr(value_452985041), specifier_452985042);
   framePtr = F.prev;
 
   
@@ -4841,24 +5343,24 @@ function nsuformatBiggestFloat(f_671090553, format_671090554, precision_67109055
       F.line = 2362;
       var i_671090564 = 0;
       F.line = 117;
-      var colontmp__452985456 = 0;
+      var colontmp__452985758 = 0;
       F.line = 2362;
-      colontmp__452985456 = (result_671090557).length;
+      colontmp__452985758 = (result_671090557).length;
       F.line = 119;
-      var i_452985457 = 0;
+      var i_452985759 = 0;
       Label2: do {
         F.line = 120;
           Label3: while (true) {
-          if (!(i_452985457 < colontmp__452985456)) break Label3;
+          if (!(i_452985759 < colontmp__452985758)) break Label3;
             F.line = 2362;
-            i_671090564 = i_452985457;
-            if ((ConstSet17[result_671090557[chckIndx(i_671090564, 0, (result_671090557).length - 1)]] != undefined)) {
+            i_671090564 = i_452985759;
+            if ((ConstSet26[result_671090557[chckIndx(i_671090564, 0, (result_671090557).length - 1)]] != undefined)) {
             F.line = 2365;
             result_671090557[chckIndx(i_671090564, 0, (result_671090557).length - 1)] = decimalSep_671090556;
             }
             
             F.line = 122;
-            i_452985457 = addInt(i_452985457, 1);
+            i_452985759 = addInt(i_452985759, 1);
           }
       } while (false);
     } while (false);
@@ -4909,7 +5411,7 @@ function nsuToUpperAsciiChar(c_671088727) {
 
   var F = {procname: "strutils.toUpperAscii", prev: framePtr, filename: "/usr/lib/nim/lib/pure/strutils.nim", line: 0};
   framePtr = F;
-    if ((ConstSet19[c_671088727] != undefined)) {
+    if ((ConstSet28[c_671088727] != undefined)) {
     F.line = 240;
     result_671088728 = (c_671088727 ^ 32);
     }
@@ -4935,21 +5437,21 @@ function nsuToUpperAsciiStr(s_671088734) {
       F.line = 209;
       var iHEX60gensym11_671088741 = 0;
       F.line = 75;
-      var colontmp__452985462 = 0;
+      var colontmp__452985764 = 0;
       F.line = 209;
-      colontmp__452985462 = subInt((s_671088734).length, 1);
+      colontmp__452985764 = subInt((s_671088734).length, 1);
       F.line = 90;
-      var res_452985463 = 0;
+      var res_452985765 = 0;
       Label2: do {
         F.line = 91;
           Label3: while (true) {
-          if (!(res_452985463 <= colontmp__452985462)) break Label3;
+          if (!(res_452985765 <= colontmp__452985764)) break Label3;
             F.line = 255;
-            iHEX60gensym11_671088741 = res_452985463;
+            iHEX60gensym11_671088741 = res_452985765;
             F.line = 255;
             result_671088735[chckIndx(iHEX60gensym11_671088741, 0, (result_671088735).length - 1)] = nsuToUpperAsciiChar(s_671088734[chckIndx(iHEX60gensym11_671088741, 0, (s_671088734).length - 1)]);
             F.line = 93;
-            res_452985463 = addInt(res_452985463, 1);
+            res_452985765 = addInt(res_452985765, 1);
           }
       } while (false);
     } while (false);
@@ -4959,65 +5461,65 @@ function nsuToUpperAsciiStr(s_671088734) {
 
 }
 
-function formatValue_452984913(result_452984915, result_452984915_Idx, value_452984916, specifier_452984917) {
+function formatValue_452984914(result_452984916, result_452984916_Idx, value_452984917, specifier_452984918) {
     var Temporary1;
 
   var F = {procname: "formatValue.formatValue", prev: framePtr, filename: "/usr/lib/nim/lib/pure/strformat.nim", line: 0};
   framePtr = F;
   BeforeRet: do {
-    if (((specifier_452984917).length == 0)) {
+    if (((specifier_452984918).length == 0)) {
     F.line = 497;
-    result_452984915[result_452984915_Idx].push.apply(result_452984915[result_452984915_Idx], HEX24_33557368(value_452984916));;
+    result_452984916[result_452984916_Idx].push.apply(result_452984916[result_452984916_Idx], HEX24_33557368(value_452984917));;
     F.line = 498;
     break BeforeRet;
     }
     
     F.line = 499;
-    var spec_452984921 = parseStandardFormatSpecifier_587202618(specifier_452984917, 0, false);
+    var spec_452984922 = parseStandardFormatSpecifier_587202618(specifier_452984918, 0, false);
     F.line = 501;
-    var fmode_452984922 = 0;
+    var fmode_452984923 = 0;
     F.line = 502;
-    switch (spec_452984921.typ) {
+    switch (spec_452984922.typ) {
     case 101:
     case 69:
       F.line = 504;
-      fmode_452984922 = 2;
+      fmode_452984923 = 2;
       break;
     case 102:
     case 70:
       F.line = 506;
-      fmode_452984922 = 1;
+      fmode_452984923 = 1;
       break;
     case 103:
     case 71:
       F.line = 508;
-      fmode_452984922 = 0;
+      fmode_452984923 = 0;
       break;
     case 0:
       break;
     default: 
       F.line = 511;
-      raiseException({message: (makeNimstrLit("invalid type in format string for number, expected one  of \'e\', \'E\', \'f\', \'F\', \'g\', \'G\' but got: ") || []).concat([spec_452984921.typ]), parent: null, m_type: NTI33555125, name: null, trace: [], up: null}, "ValueError");
+      raiseException({message: (makeNimstrLit("invalid type in format string for number, expected one  of \'e\', \'E\', \'f\', \'F\', \'g\', \'G\' but got: ") || []).concat([spec_452984922.typ]), parent: null, m_type: NTI33555125, name: null, trace: [], up: null}, "ValueError");
       break;
     }
     F.line = 515;
-    var f_452984924 = [nsuformatBiggestFloat(value_452984916, fmode_452984922, chckRange(spec_452984921.precision, -1, 32), 46)];
+    var f_452984925 = [nsuformatBiggestFloat(value_452984917, fmode_452984923, chckRange(spec_452984922.precision, -1, 32), 46)];
     F.line = 516;
-    var sign_452984925 = false;
-    if ((0.0 <= value_452984916)) {
-    if (!((spec_452984921.sign == 45))) {
+    var sign_452984926 = false;
+    if ((0.0 <= value_452984917)) {
+    if (!((spec_452984922.sign == 45))) {
     F.line = 519;
-    sign_452984925 = true;
-    if ((value_452984916 == 0.0)) {
-    if (((1.0 / value_452984916) == Infinity)) {
+    sign_452984926 = true;
+    if ((value_452984917 == 0.0)) {
+    if (((1.0 / value_452984917) == Infinity)) {
     F.line = 523;
-    insert_33557846(f_452984924, 0, nimCharToStr(spec_452984921.sign), 0);
+    insert_33557846(f_452984925, 0, nimCharToStr(spec_452984922.sign), 0);
     }
     
     }
     else {
       F.line = 525;
-    insert_33557846(f_452984924, 0, nimCharToStr(spec_452984921.sign), 0);
+    insert_33557846(f_452984925, 0, nimCharToStr(spec_452984922.sign), 0);
     }
     
     }
@@ -5025,51 +5527,51 @@ function formatValue_452984913(result_452984915, result_452984915_Idx, value_452
     }
     else {
       F.line = 527;
-      sign_452984925 = true;
+      sign_452984926 = true;
     }
     
-    if (spec_452984921.padWithZero) {
+    if (spec_452984922.padWithZero) {
     F.line = 530;
-    var signStr_452984926 = [];
-    if (sign_452984925) {
+    var signStr_452984927 = [];
+    if (sign_452984926) {
     F.line = 532;
-    signStr_452984926 = nimCopy(null, nimCharToStr(f_452984924[0][chckIndx(0, 0, (f_452984924[0]).length - 1)]), NTI33554439);
+    signStr_452984927 = nimCopy(null, nimCharToStr(f_452984925[0][chckIndx(0, 0, (f_452984925[0]).length - 1)]), NTI33554439);
     F.line = 533;
-    f_452984924[0] = nimCopy(null, HEX5BHEX5D_637537451(f_452984924[0], HEX2EHEX2E_637537424(1, 1)), NTI33554439);
+    f_452984925[0] = nimCopy(null, HEX5BHEX5D_637537451(f_452984925[0], HEX2EHEX2E_637537424(1, 1)), NTI33554439);
     }
     
     F.line = 535;
-    var toFill_452984948 = subInt(subInt(spec_452984921.minimumWidth, (f_452984924[0]).length), (sign_452984925 ? 1 : 0));
-    if ((0 < toFill_452984948)) {
+    var toFill_452984949 = subInt(subInt(spec_452984922.minimumWidth, (f_452984925[0]).length), (sign_452984926 ? 1 : 0));
+    if ((0 < toFill_452984949)) {
     F.line = 537;
-    f_452984924[0] = nimCopy(null, (nsuRepeatChar(48, chckRange(toFill_452984948, 0, 2147483647)) || []).concat(f_452984924[0] || []), NTI33554439);
+    f_452984925[0] = nimCopy(null, (nsuRepeatChar(48, chckRange(toFill_452984949, 0, 2147483647)) || []).concat(f_452984925[0] || []), NTI33554439);
     }
     
-    if (sign_452984925) {
+    if (sign_452984926) {
     F.line = 539;
-    f_452984924[0] = nimCopy(null, (signStr_452984926 || []).concat(f_452984924[0] || []), NTI33554439);
+    f_452984925[0] = nimCopy(null, (signStr_452984927 || []).concat(f_452984925[0] || []), NTI33554439);
     }
     
     }
     
     F.line = 542;
-    if ((spec_452984921.align == 0)) {
+    if ((spec_452984922.align == 0)) {
     Temporary1 = 62;
     }
     else {
-    Temporary1 = spec_452984921.align;
+    Temporary1 = spec_452984922.align;
     }
     
-    var align_452984949 = Temporary1;
+    var align_452984950 = Temporary1;
     F.line = 543;
-    var res_452984950 = alignString_587202580(f_452984924[0], spec_452984921.minimumWidth, align_452984949, spec_452984921.fill);
-    if ((ConstSet18[spec_452984921.typ] != undefined)) {
+    var res_452984951 = alignString_587202580(f_452984925[0], spec_452984922.minimumWidth, align_452984950, spec_452984922.fill);
+    if ((ConstSet27[spec_452984922.typ] != undefined)) {
     F.line = 545;
-    result_452984915[result_452984915_Idx].push.apply(result_452984915[result_452984915_Idx], nsuToUpperAsciiStr(res_452984950));;
+    result_452984916[result_452984916_Idx].push.apply(result_452984916[result_452984916_Idx], nsuToUpperAsciiStr(res_452984951));;
     }
     else {
       F.line = 547;
-    result_452984915[result_452984915_Idx].push.apply(result_452984915[result_452984915_Idx], res_452984950);;
+    result_452984916[result_452984916_Idx].push.apply(result_452984916[result_452984916_Idx], res_452984951);;
     }
     
   } while (false);
@@ -5078,174 +5580,174 @@ function formatValue_452984913(result_452984915, result_452984915_Idx, value_452
   
 }
 
-function HEX24_452984896(t_452984897) {
-  var result_452984898 = [];
+function HEX24_452984897(t_452984898) {
+  var result_452984899 = [];
 
   var F = {procname: "find_tax.$", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
   framePtr = F;
   BeforeRet: do {
-    F.line = 26;
-    F.line = 26;
-    var fmtRes_452984907 = [mnewString(0)];
-    F.line = 26;
-    fmtRes_452984907[0].push.apply(fmtRes_452984907[0], makeNimstrLit("($"));;
-    F.line = 26;
-    formatValue_452984913(fmtRes_452984907, 0, t_452984897.value, []);
-    F.line = 26;
-    fmtRes_452984907[0].push.apply(fmtRes_452984907[0], makeNimstrLit(" with tax x"));;
-    F.line = 26;
-    formatValue_452984913(fmtRes_452984907, 0, t_452984897.tax, []);
-    F.line = 26;
-    fmtRes_452984907[0].push.apply(fmtRes_452984907[0], makeNimstrLit(")"));;
-    result_452984898 = nimCopy(null, fmtRes_452984907[0], NTI33554439);
+    F.line = 27;
+    F.line = 27;
+    var fmtRes_452984908 = [mnewString(0)];
+    F.line = 27;
+    fmtRes_452984908[0].push.apply(fmtRes_452984908[0], makeNimstrLit("($"));;
+    F.line = 27;
+    formatValue_452984914(fmtRes_452984908, 0, t_452984898.value, []);
+    F.line = 27;
+    fmtRes_452984908[0].push.apply(fmtRes_452984908[0], makeNimstrLit(" with tax x"));;
+    F.line = 27;
+    formatValue_452984914(fmtRes_452984908, 0, t_452984898.tax, []);
+    F.line = 27;
+    fmtRes_452984908[0].push.apply(fmtRes_452984908[0], makeNimstrLit(")"));;
+    result_452984899 = nimCopy(null, fmtRes_452984908[0], NTI33554439);
     break BeforeRet;
   } while (false);
   framePtr = F.prev;
 
-  return result_452984898;
+  return result_452984899;
 
 }
 
-function join_452985042(a_452985044, sep_452985045) {
-  var result_452985046 = [];
+function join_452985043(a_452985045, sep_452985046) {
+  var result_452985047 = [];
 
   var F = {procname: "join.join", prev: framePtr, filename: "/usr/lib/nim/lib/pure/strutils.nim", line: 0};
   framePtr = F;
     F.line = 1796;
-    result_452985046 = nimCopy(null, [], NTI33554439);
+    result_452985047 = nimCopy(null, [], NTI33554439);
     Label1: do {
       F.line = 1797;
-      var i_452985070 = 0;
+      var i_452985071 = 0;
       F.line = 1797;
-      var x_452985071 = ({value: 0.0, tax: 0.0});
+      var x_452985072 = ({value: 0.0, tax: 0.0});
       F.line = 134;
-      var i_452985453 = 0;
+      var i_452985755 = 0;
       Label2: do {
         F.line = 135;
           Label3: while (true) {
-          if (!(i_452985453 < (a_452985044).length)) break Label3;
+          if (!(i_452985755 < (a_452985045).length)) break Label3;
             F.line = 1797;
-            i_452985070 = i_452985453;
+            i_452985071 = i_452985755;
             F.line = 1797;
-            x_452985071 = nimCopy(x_452985071, a_452985044[chckIndx(i_452985453, 0, (a_452985044).length - 1)], NTI452984835);
-            if ((0 < i_452985070)) {
+            x_452985072 = nimCopy(x_452985072, a_452985045[chckIndx(i_452985755, 0, (a_452985045).length - 1)], NTI452984835);
+            if ((0 < i_452985071)) {
             F.line = 1799;
-            result_452985046.push.apply(result_452985046, sep_452985045);;
+            result_452985047.push.apply(result_452985047, sep_452985046);;
             }
             
             F.line = 1797;
-            result_452985046.push.apply(result_452985046, HEX24_452984896(x_452985071));;
+            result_452985047.push.apply(result_452985047, HEX24_452984897(x_452985072));;
             F.line = 137;
-            i_452985453 = addInt(i_452985453, 1);
+            i_452985755 = addInt(i_452985755, 1);
           }
       } while (false);
     } while (false);
   framePtr = F.prev;
 
-  return result_452985046;
+  return result_452985047;
 
 }
 
-function HEX24_452985029(hist_452985030) {
-  var result_452985031 = [];
+function HEX24_452985030(hist_452985031) {
+  var result_452985032 = [];
 
   var F = {procname: "find_tax.$", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
   framePtr = F;
-    F.line = 38;
-    F.line = 38;
-    var fmtRes_452985036 = [mnewString(0)];
-    F.line = 38;
-    fmtRes_452985036[0].push.apply(fmtRes_452985036[0], makeNimstrLit("round_before_summing="));;
-    F.line = 38;
-    formatValue_452985037(fmtRes_452985036, 0, hist_452985030.round_before_summing, []);
-    F.line = 38;
-    fmtRes_452985036[0].push.apply(fmtRes_452985036[0], makeNimstrLit(", "));;
-    result_452985031 = nimCopy(null, fmtRes_452985036[0], NTI33554439);
     F.line = 39;
-    result_452985031.push.apply(result_452985031, join_452985042(hist_452985030.hist, makeNimstrLit(", ")));;
+    F.line = 39;
+    var fmtRes_452985037 = [mnewString(0)];
+    F.line = 39;
+    fmtRes_452985037[0].push.apply(fmtRes_452985037[0], makeNimstrLit("round_before_summing="));;
+    F.line = 39;
+    formatValue_452985038(fmtRes_452985037, 0, hist_452985031.round_before_summing, []);
+    F.line = 39;
+    fmtRes_452985037[0].push.apply(fmtRes_452985037[0], makeNimstrLit(", "));;
+    result_452985032 = nimCopy(null, fmtRes_452985037[0], NTI33554439);
     F.line = 40;
-    F.line = 40;
-    var fmtRes_452985076 = [mnewString(0)];
-    F.line = 40;
-    fmtRes_452985076[0].push.apply(fmtRes_452985076[0], makeNimstrLit(": total was "));;
-    F.line = 40;
-    formatValue_452984913(fmtRes_452985076, 0, sum_452984969(hist_452985030), []);
-    result_452985031.push.apply(result_452985031, fmtRes_452985076[0]);;
+    result_452985032.push.apply(result_452985032, join_452985043(hist_452985031.hist, makeNimstrLit(", ")));;
+    F.line = 41;
+    F.line = 41;
+    var fmtRes_452985077 = [mnewString(0)];
+    F.line = 41;
+    fmtRes_452985077[0].push.apply(fmtRes_452985077[0], makeNimstrLit(": total was "));;
+    F.line = 41;
+    formatValue_452984914(fmtRes_452985077, 0, sum_452984970(hist_452985031), []);
+    result_452985032.push.apply(result_452985032, fmtRes_452985077[0]);;
   framePtr = F.prev;
 
-  return result_452985031;
+  return result_452985032;
 
 }
 
-function formatValue_452985176(result_452985178, result_452985178_Idx, value_452985179, specifier_452985180) {
+function formatValue_452985177(result_452985179, result_452985179_Idx, value_452985180, specifier_452985181) {
   var F = {procname: "formatValue.formatValue", prev: framePtr, filename: "/usr/lib/nim/lib/pure/strformat.nim", line: 0};
   framePtr = F;
     F.line = 568;
-    formatValue_587202722(result_452985178, result_452985178_Idx, HEX24_452985029(value_452985179), specifier_452985180);
+    formatValue_587202722(result_452985179, result_452985179_Idx, HEX24_452985030(value_452985180), specifier_452985181);
   framePtr = F.prev;
 
   
 }
 
-function calculate_taxes_452985091(amounts_452985092, total_452985093, tax_rates_452985094) {
-  var result_452985095 = [];
+function calculate_taxes_452985092(amounts_452985093, total_452985094, tax_rates_452985095) {
+  var result_452985096 = [];
 
   var F = {procname: "find_tax.calculate_taxes", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
   framePtr = F;
-    F.line = 43;
-    result_452985095 = nimCopy(null, [], NTI33554439);
     F.line = 44;
-    var tax_multipliers_452985096 = nimCopy(null, tax_rates_452985094, NTI452984998);
+    result_452985096 = nimCopy(null, [], NTI33554439);
+    F.line = 45;
+    var tax_multipliers_452985097 = nimCopy(null, tax_rates_452985095, NTI452984998);
     Label1: do {
-      F.line = 45;
-      var t_452985118 = 0.0;
+      F.line = 46;
+      var t_452985119 = 0.0;
       F.line = 235;
-      var i_452985431 = 0;
+      var i_452985733 = 0;
       F.line = 236;
-      var L_452985432 = (tax_multipliers_452985096).length;
+      var L_452985734 = (tax_multipliers_452985097).length;
       Label2: do {
         F.line = 237;
           Label3: while (true) {
-          if (!(i_452985431 < L_452985432)) break Label3;
-            F.line = 45;
-            t_452985118 = tax_multipliers_452985096[chckIndx(i_452985431, 0, (tax_multipliers_452985096).length - 1)];
-            F.line = 52;
-            var possible_hists_452985123 = [newHistory_452984844(true), newHistory_452984844(false)];
+          if (!(i_452985733 < L_452985734)) break Label3;
+            F.line = 46;
+            t_452985119 = tax_multipliers_452985097[chckIndx(i_452985733, 0, (tax_multipliers_452985097).length - 1)];
+            F.line = 53;
+            var possible_hists_452985124 = [newHistory_452984845(true), newHistory_452984845(false)];
             Label4: do {
-              F.line = 53;
-              var v_452985127 = 0.0;
+              F.line = 54;
+              var v_452985128 = 0.0;
               F.line = 235;
-              var i_452985424 = 0;
+              var i_452985726 = 0;
               F.line = 236;
-              var L_452985425 = (amounts_452985092).length;
+              var L_452985727 = (amounts_452985093).length;
               Label5: do {
                 F.line = 237;
                   Label6: while (true) {
-                  if (!(i_452985424 < L_452985425)) break Label6;
-                    F.line = 53;
-                    v_452985127 = amounts_452985092[chckIndx(i_452985424, 0, (amounts_452985092).length - 1)];
+                  if (!(i_452985726 < L_452985727)) break Label6;
                     F.line = 54;
-                    var newhists_452985132 = [];
+                    v_452985128 = amounts_452985093[chckIndx(i_452985726, 0, (amounts_452985093).length - 1)];
+                    F.line = 55;
+                    var newhists_452985133 = [];
                     Label7: do {
-                      F.line = 55;
-                      var hist_452985154 = ({hist: [], round_before_summing: false});
+                      F.line = 56;
+                      var hist_452985155 = ({hist: [], round_before_summing: false});
                       F.line = 235;
-                      var i_452985420 = 0;
+                      var i_452985722 = 0;
                       F.line = 236;
-                      var L_452985421 = (possible_hists_452985123).length;
+                      var L_452985723 = (possible_hists_452985124).length;
                       Label8: do {
                         F.line = 237;
                           Label9: while (true) {
-                          if (!(i_452985420 < L_452985421)) break Label9;
-                            F.line = 55;
-                            hist_452985154 = possible_hists_452985123[chckIndx(i_452985420, 0, (possible_hists_452985123).length - 1)];
-                            F.line = 55;
-                            newhists_452985132.push(with_452984878(hist_452985154, {value: v_452985127, tax: 1.0}));;
-                            F.line = 55;
-                            newhists_452985132.push(with_452984878(hist_452985154, {value: v_452985127, tax: t_452985118}));;
+                          if (!(i_452985722 < L_452985723)) break Label9;
+                            F.line = 56;
+                            hist_452985155 = possible_hists_452985124[chckIndx(i_452985722, 0, (possible_hists_452985124).length - 1)];
+                            F.line = 56;
+                            newhists_452985133.push(with_452984879(hist_452985155, {value: v_452985128, tax: 1.0}));;
+                            F.line = 56;
+                            newhists_452985133.push(with_452984879(hist_452985155, {value: v_452985128, tax: t_452985119}));;
                             F.line = 239;
-                            i_452985420 = addInt(i_452985420, 1);
-                            if (!(((possible_hists_452985123).length == L_452985421))) {
+                            i_452985722 = addInt(i_452985722, 1);
+                            if (!(((possible_hists_452985124).length == L_452985723))) {
                             F.line = 240;
                             failedAssertImpl_218103864(makeNimstrLit("/usr/lib/nim/lib/system/iterators.nim(240, 11) `len(a) == L` the length of the seq changed while iterating over it"));
                             }
@@ -5253,11 +5755,11 @@ function calculate_taxes_452985091(amounts_452985092, total_452985093, tax_rates
                           }
                       } while (false);
                     } while (false);
-                    F.line = 59;
-                    possible_hists_452985123 = nimCopy(null, newhists_452985132, NTI452985025);
+                    F.line = 60;
+                    possible_hists_452985124 = nimCopy(null, newhists_452985133, NTI452985025);
                     F.line = 239;
-                    i_452985424 = addInt(i_452985424, 1);
-                    if (!(((amounts_452985092).length == L_452985425))) {
+                    i_452985726 = addInt(i_452985726, 1);
+                    if (!(((amounts_452985093).length == L_452985727))) {
                     F.line = 240;
                     failedAssertImpl_218103864(makeNimstrLit("/usr/lib/nim/lib/system/iterators.nim(240, 11) `len(a) == L` the length of the seq changed while iterating over it"));
                     }
@@ -5266,34 +5768,34 @@ function calculate_taxes_452985091(amounts_452985092, total_452985093, tax_rates
               } while (false);
             } while (false);
             Label10: do {
-              F.line = 60;
-              var hist_452985166 = ({hist: [], round_before_summing: false});
+              F.line = 61;
+              var hist_452985167 = ({hist: [], round_before_summing: false});
               F.line = 235;
-              var i_452985428 = 0;
+              var i_452985730 = 0;
               F.line = 236;
-              var L_452985429 = (possible_hists_452985123).length;
+              var L_452985731 = (possible_hists_452985124).length;
               Label11: do {
                 F.line = 237;
                   Label12: while (true) {
-                  if (!(i_452985428 < L_452985429)) break Label12;
-                    F.line = 60;
-                    hist_452985166 = possible_hists_452985123[chckIndx(i_452985428, 0, (possible_hists_452985123).length - 1)];
+                  if (!(i_452985730 < L_452985731)) break Label12;
                     F.line = 61;
-                    var hist_sum_452985167 = sum_452984969(hist_452985166);
-                    if ((abs_687866028((hist_sum_452985167 - total_452985093)) < 0.00999)) {
-                    F.line = 63;
-                    F.line = 63;
-                    var fmtRes_452985175 = [mnewString(0)];
-                    F.line = 63;
-                    fmtRes_452985175[0].push.apply(fmtRes_452985175[0], makeNimstrLit("  * "));;
-                    F.line = 63;
-                    formatValue_452985176(fmtRes_452985175, 0, hist_452985166, []);
-                    result_452985095.push.apply(result_452985095, (fmtRes_452985175[0] || []).concat(makeNimstrLit("\x0A") || []));;
+                    hist_452985167 = possible_hists_452985124[chckIndx(i_452985730, 0, (possible_hists_452985124).length - 1)];
+                    F.line = 62;
+                    var hist_sum_452985168 = sum_452984970(hist_452985167);
+                    if ((abs_687866028((hist_sum_452985168 - total_452985094)) < 0.00999)) {
+                    F.line = 64;
+                    F.line = 64;
+                    var fmtRes_452985176 = [mnewString(0)];
+                    F.line = 64;
+                    fmtRes_452985176[0].push.apply(fmtRes_452985176[0], makeNimstrLit("  * "));;
+                    F.line = 64;
+                    formatValue_452985177(fmtRes_452985176, 0, hist_452985167, []);
+                    result_452985096.push.apply(result_452985096, (fmtRes_452985176[0] || []).concat(makeNimstrLit("\x0A") || []));;
                     }
                     
                     F.line = 239;
-                    i_452985428 = addInt(i_452985428, 1);
-                    if (!(((possible_hists_452985123).length == L_452985429))) {
+                    i_452985730 = addInt(i_452985730, 1);
+                    if (!(((possible_hists_452985124).length == L_452985731))) {
                     F.line = 240;
                     failedAssertImpl_218103864(makeNimstrLit("/usr/lib/nim/lib/system/iterators.nim(240, 11) `len(a) == L` the length of the seq changed while iterating over it"));
                     }
@@ -5302,8 +5804,8 @@ function calculate_taxes_452985091(amounts_452985092, total_452985093, tax_rates
               } while (false);
             } while (false);
             F.line = 239;
-            i_452985431 = addInt(i_452985431, 1);
-            if (!(((tax_multipliers_452985096).length == L_452985432))) {
+            i_452985733 = addInt(i_452985733, 1);
+            if (!(((tax_multipliers_452985097).length == L_452985734))) {
             F.line = 240;
             failedAssertImpl_218103864(makeNimstrLit("/usr/lib/nim/lib/system/iterators.nim(240, 11) `len(a) == L` the length of the seq changed while iterating over it"));
             }
@@ -5313,78 +5815,225 @@ function calculate_taxes_452985091(amounts_452985092, total_452985093, tax_rates
     } while (false);
   framePtr = F.prev;
 
-  return result_452985095;
+  return result_452985096;
 
 }
 
-function runJS(amounts_input_452985285, total_input_452985286, tax_rates_input_452985287) {
-  var result_452985288 = null;
+function addQuoted_452985639(s_452985641, s_452985641_Idx, x_452985642) {
+  var F = {procname: "addQuoted.addQuoted", prev: framePtr, filename: "/usr/lib/nim/lib/system.nim", line: 0};
+  framePtr = F;
+    F.line = 2925;
+    addFloat_33557372(s_452985641, s_452985641_Idx, x_452985642);
+  framePtr = F.prev;
+
+  
+}
+
+function collectionToString_452985624(x_452985626, prefix_452985627, separator_452985628, suffix_452985629) {
+  var result_452985630 = [[]];
+
+  var F = {procname: "collectionToString.collectionToString", prev: framePtr, filename: "/usr/lib/nim/lib/system/dollars.nim", line: 0};
+  framePtr = F;
+    F.line = 121;
+    result_452985630[0] = nimCopy(null, prefix_452985627, NTI33554439);
+    F.line = 122;
+    var firstElement_452985631 = true;
+    Label1: do {
+      F.line = 123;
+      var value_452985635 = 0.0;
+      F.line = 235;
+      var i_452985768 = 0;
+      F.line = 236;
+      var L_452985769 = (x_452985626).length;
+      Label2: do {
+        F.line = 237;
+          Label3: while (true) {
+          if (!(i_452985768 < L_452985769)) break Label3;
+            F.line = 123;
+            value_452985635 = x_452985626[i_452985768];
+            if (firstElement_452985631) {
+            F.line = 125;
+            firstElement_452985631 = false;
+            }
+            else {
+              F.line = 127;
+            result_452985630[0].push.apply(result_452985630[0], separator_452985628);;
+            }
+            
+            F.line = 123;
+            addQuoted_452985639(result_452985630, 0, value_452985635);
+            F.line = 239;
+            i_452985768 += 1;
+            if (!(((x_452985626).length == L_452985769))) {
+            F.line = 240;
+            failedAssertImpl_218103864(makeNimstrLit("/usr/lib/nim/lib/system/iterators.nim(240, 11) `len(a) == L` the length of the seq changed while iterating over it"));
+            }
+            
+          }
+      } while (false);
+    } while (false);
+    F.line = 137;
+    result_452985630[0].push.apply(result_452985630[0], suffix_452985629);;
+  framePtr = F.prev;
+
+  return result_452985630[0];
+
+}
+
+function HEX24_452985620(x_452985622) {
+  var result_452985623 = [];
+
+  var F = {procname: "$.$", prev: framePtr, filename: "/usr/lib/nim/lib/system/dollars.nim", line: 0};
+  framePtr = F;
+    F.line = 148;
+    result_452985623 = nimCopy(null, collectionToString_452985624(x_452985622, makeNimstrLit("@["), makeNimstrLit(", "), makeNimstrLit("]")), NTI33554439);
+  framePtr = F.prev;
+
+  return result_452985623;
+
+}
+
+function addQuoted_452985614(s_452985616, s_452985616_Idx, x_452985617) {
+  var F = {procname: "addQuoted.addQuoted", prev: framePtr, filename: "/usr/lib/nim/lib/system.nim", line: 0};
+  framePtr = F;
+    F.line = 2929;
+    s_452985616[s_452985616_Idx].push.apply(s_452985616[s_452985616_Idx], HEX24_452985620(x_452985617));;
+  framePtr = F.prev;
+
+  
+}
+
+function HEX24_452985562(x_452985564) {
+  var result_452985565 = [[]];
+
+  var F = {procname: "$.$", prev: framePtr, filename: "/usr/lib/nim/lib/system/dollars.nim", line: 0};
+  framePtr = F;
+    F.line = 97;
+    result_452985565[0] = nimCopy(null, makeNimstrLit("("), NTI33554439);
+    F.line = 99;
+    var count_452985571 = 0;
+    if ((0 < count_452985571)) {
+    F.line = 101;
+    result_452985565[0].push.apply(result_452985565[0], makeNimstrLit(", "));;
+    }
+    
+    F.line = 105;
+    count_452985571 += 1;
+    F.line = 111;
+    addQuoted_452985614(result_452985565, 0, x_452985564["Field0"]);
+    if ((0 < count_452985571)) {
+    F.line = 101;
+    result_452985565[0].push.apply(result_452985565[0], makeNimstrLit(", "));;
+    }
+    
+    F.line = 105;
+    count_452985571 += 1;
+    F.line = 111;
+    addQuoted_452985639(result_452985565, 0, x_452985564["Field1"]);
+    if ((0 < count_452985571)) {
+    F.line = 101;
+    result_452985565[0].push.apply(result_452985565[0], makeNimstrLit(", "));;
+    }
+    
+    F.line = 105;
+    count_452985571 += 1;
+    F.line = 111;
+    addQuoted_452985614(result_452985565, 0, x_452985564["Field2"]);
+    if ((count_452985571 == 1)) {
+    F.line = 116;
+    result_452985565[0].push.apply(result_452985565[0], makeNimstrLit(","));;
+    }
+    
+    F.line = 117;
+    result_452985565[0].push.apply(result_452985565[0], makeNimstrLit(")"));;
+  framePtr = F.prev;
+
+  return result_452985565[0];
+
+}
+
+function raiseResultDefect_452985466(m_452985468, v_452985469) {
+  var F = {procname: "raiseResultDefect.raiseResultDefect", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+  framePtr = F;
+    F.line = 433;
+    raiseException({message: (m_452985468 || []).concat(makeNimstrLit(": ") || [],HEX24_452985562(v_452985469) || []), m_type: NTI989855748, parent: null, name: null, trace: [], up: null}, "ResultDefect");
+  framePtr = F.prev;
+
+  
+}
+
+function error_452985461(self_452985464) {
+      var Temporary1;
+      var Temporary2;
+
+  var result_452985465 = [];
+
+  var F = {procname: "error.error", prev: framePtr, filename: "/home/issa/.nimble/pkgs/results-0.5.1/results.nim", line: 0};
+  framePtr = F;
+    F.line = 1011;
+    switch (self_452985464.oResultPrivate) {
+    case true:
+      F.line = 1014;
+      var Temporary1 = self_452985464;
+      if (ConstSet29[Temporary1.oResultPrivate]===undefined) { raiseFieldError2(makeNimstrLit("field \'vResultPrivate\' is not accessible for type \'Result\' using \'oResultPrivate = "), reprDiscriminant(Temporary1.oResultPrivate, NTI33554466)); }
+      raiseResultDefect_452985466(makeNimstrLit("Trying to access error when value is set"), Temporary1.vResultPrivate);
+      break;
+    case false:
+      F.line = 1019;
+      var Temporary2 = self_452985464;
+      if (ConstSet30[Temporary2.oResultPrivate]===undefined) { raiseFieldError2(makeNimstrLit("field \'eResultPrivate\' is not accessible for type \'Result\' using \'oResultPrivate = "), reprDiscriminant(Temporary2.oResultPrivate, NTI33554466)); }
+      result_452985465 = nimCopy(null, Temporary2.eResultPrivate, NTI33554439);
+      break;
+    default: 
+      break;
+    }
+  framePtr = F.prev;
+
+  return result_452985465;
+
+}
+
+function runJS(amounts_input_452985392, total_input_452985393, tax_rates_input_452985394) {
+  var result_452985395 = null;
 
   var F = {procname: "find_tax.runJS", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
   framePtr = F;
   BeforeRet: do {
-    F.line = 146;
-    var amounts_452985289 = [];
+    F.line = 142;
+    var amounts_452985396 = [];
+    F.line = 143;
+    var total_452985397 = 0.0;
+    F.line = 144;
+    var tax_rates_452985398 = [];
+    F.line = 145;
+    var parsed_452985399 = parse_input_452985324(cstrToNimstr(amounts_input_452985392), cstrToNimstr(total_input_452985393), cstrToNimstr(tax_rates_input_452985394));
+    if (parsed_452985399.oResultPrivate) {
     F.line = 147;
-    var maybe_amounts_452985290 = parseFloatSeq_452985235(cstrToNimstr(amounts_input_452985285));
-    if (isSome_452985295(maybe_amounts_452985290)) {
+    var __452985401 = nimCopy(null, value_452985440(parsed_452985399), NTI452985183);
+    F.line = 147;
+    amounts_452985396 = nimCopy(null, __452985401["Field0"], NTI452985184);
+    F.line = 147;
+    total_452985397 = __452985401["Field1"];
+    F.line = 147;
+    tax_rates_452985398 = nimCopy(null, __452985401["Field2"], NTI452985185);
+    F.line = 148;
+    var message_452985451 = (makeNimstrLit("Results:\x0A") || []).concat(calculate_taxes_452985092(amounts_452985396, total_452985397, tax_rates_452985398) || []);
     F.line = 149;
-    amounts_452985289 = nimCopy(null, get_452985312(maybe_amounts_452985290), NTI452985107);
+    result_452985395 = toJSStr(message_452985451);
+    break BeforeRet;
     }
     else {
       F.line = 151;
-      result_452985288 = "Could not parse amounts";
+      var message_452985680 = (makeNimstrLit("Could not parse input:\x0A") || []).concat(error_452985461(parsed_452985399) || []);
+      F.line = 152;
+      result_452985395 = toJSStr(message_452985680);
       break BeforeRet;
     }
     
-    F.line = 152;
-    var total_452985353 = 0.0;
-    F.line = 153;
-++excHandler;
-    try {
-    F.line = 154;
-    total_452985353 = nsuParseFloat(cstrToNimstr(total_input_452985286));
---excHandler;
-} catch (EXCEPTION) {
- var prevJSError = lastJSError;
- lastJSError = EXCEPTION;
- --excHandler;
-    framePtr = F;
-    if (lastJSError && (isObj(lastJSError.m_type, NTI33555125))) {
-    F.line = 156;
-    result_452985288 = "Could not parse total";
-    break BeforeRet;
-    }
-    else {
-    	reraiseException();
-    }
-    lastJSError = prevJSError;
-    } finally {
-    framePtr = F;
-    }
-    F.line = 157;
-    var tax_rates_452985354 = [];
-    F.line = 158;
-    var maybe_taxes_452985355 = parseFloatSeq_452985235(cstrToNimstr(tax_rates_input_452985287));
-    if (isSome_452985295(maybe_taxes_452985355)) {
-    F.line = 160;
-    tax_rates_452985354 = nimCopy(null, get_452985312(maybe_taxes_452985355), NTI452985107);
-    }
-    else {
-      F.line = 162;
-      result_452985288 = "Could not parse tax rates";
-      break BeforeRet;
-    }
-    
-    F.line = 163;
-    var message_452985378 = (makeNimstrLit("Results:\x0A") || []).concat(calculate_taxes_452985091(amounts_452985289, total_452985353, tax_rates_452985354) || []);
-    F.line = 164;
-    result_452985288 = toJSStr(message_452985378);
-    break BeforeRet;
   } while (false);
   framePtr = F.prev;
 
-  return result_452985288;
+  return result_452985395;
 
 }
 var F = {procname: "module find_tax", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
