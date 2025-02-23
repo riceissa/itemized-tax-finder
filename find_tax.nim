@@ -71,74 +71,77 @@ func parseFloatSeq(input: string): Option[seq[float]] =
             return none(seq[float])
     return some(res)
 
-proc main() =
-    var amounts_input: string = ""
-    var total_input: string = ""
-    for kind, key, val in getopt():
-        case kind
-        of cmdEnd: break
-        of cmdShortOption, cmdLongOption:
-            if val == "":
-                if key == "amounts":
-                    echo "Amounts must be provided using e.g. --amounts=22.09,81.89,16.24"
-                elif key == "total":
-                    echo "Total must be provided using e.g. --total=124.13"
+when not defined(js):
+    proc main() =
+        var amounts_input: string = ""
+        var total_input: string = ""
+        for kind, key, val in getopt():
+            case kind
+            of cmdEnd: break
+            of cmdShortOption, cmdLongOption:
+                if val == "":
+                    if key == "amounts":
+                        echo "Amounts must be provided using e.g. --amounts=22.09,81.89,16.24"
+                    elif key == "total":
+                        echo "Total must be provided using e.g. --total=124.13"
+                    else:
+                        echo "Unknown option: ", key
                 else:
-                    echo "Unknown option: ", key
-            else:
-                if key == "amounts":
-                    amounts_input = val
-                elif key == "total":
-                    total_input = val
-                else:
-                    echo "Unknown option and value: ", key, ", ", val
-        of cmdArgument:
-            echo "Argument: ", key
-    if amounts_input == "" or total_input == "":
-        echo "Did not find amounts or total."
-    var amounts: seq[float]
-    let maybe_amounts = parseFloatSeq(amounts_input)
-    if maybe_amounts.isSome:
-        amounts = maybe_amounts.get()
-    else:
-        echo "Could not parse amounts"
-        quit()
-    var total: float
-    try:
-        total = parseFloat(total_input)
-    except ValueError:
-        echo "Could not parse total"
-        quit()
+                    if key == "amounts":
+                        amounts_input = val
+                    elif key == "total":
+                        total_input = val
+                    else:
+                        echo "Unknown option and value: ", key, ", ", val
+            of cmdArgument:
+                echo "Argument: ", key
+        if amounts_input == "" or total_input == "":
+            echo "Did not find amounts or total."
+        var amounts: seq[float]
+        let maybe_amounts = parseFloatSeq(amounts_input)
+        if maybe_amounts.isSome:
+            amounts = maybe_amounts.get()
+        else:
+            echo "Could not parse amounts"
+            quit()
+        var total: float
+        try:
+            total = parseFloat(total_input)
+        except ValueError:
+            echo "Could not parse total"
+            quit()
 
-    # Values to be modified by the user:
-    # 1. amounts: This is the list of individual amounts, NOT including tax.
+        # Values to be modified by the user:
+        # 1. amounts: This is the list of individual amounts, NOT including tax.
 
-    # 2. totalAmount: This is the amount that was actually paid, and includes tax.
-    #    For example, it might be the amount that appears on your credit card
-    #    statement.
+        # 2. totalAmount: This is the amount that was actually paid, and includes tax.
+        #    For example, it might be the amount that appears on your credit card
+        #    statement.
 
-    # Nothing else in this file should be edited by the user.
+        # Nothing else in this file should be edited by the user.
 
-    echo ""
-    echo "====================================="
-    echo "Results:"
-    echo ""
-    echo calculate_taxes(amounts, total)
+        echo ""
+        echo "====================================="
+        echo "Results:"
+        echo ""
+        echo calculate_taxes(amounts, total)
 
-proc runJS(amounts_input: cstring, total_input: cstring): cstring {.exportc} =
-    var amounts: seq[float]
-    let maybe_amounts = parseFloatSeq($amounts_input)
-    if maybe_amounts.isSome:
-        amounts = maybe_amounts.get()
-    else:
-        return cstring("Could not parse amounts")
-    var total: float
-    try:
-        total = parseFloat($total_input)
-    except ValueError:
-        return cstring("Could not parse total")
-    let message = "Results:\n" & calculate_taxes(amounts, total)
-    return cstring(message)
+    if isMainModule:
+        main()
 
-if isMainModule:
-    main()
+when defined(js):
+    proc runJS(amounts_input: cstring, total_input: cstring): cstring {.exportc} =
+        var amounts: seq[float]
+        let maybe_amounts = parseFloatSeq($amounts_input)
+        if maybe_amounts.isSome:
+            amounts = maybe_amounts.get()
+        else:
+            return cstring("Could not parse amounts")
+        var total: float
+        try:
+            total = parseFloat($total_input)
+        except ValueError:
+            return cstring("Could not parse total")
+        let message = "Results:\n" & calculate_taxes(amounts, total)
+        return cstring(message)
+
