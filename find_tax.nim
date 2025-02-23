@@ -156,22 +156,13 @@ when not defined(js):
 when defined(js):
     proc runJS(amounts_input: cstring, total_input: cstring, tax_rates_input: cstring): cstring {.exportc} =
         var amounts: seq[float]
-        let maybe_amounts = parseFloatSeq($amounts_input)
-        if maybe_amounts.isSome:
-            amounts = maybe_amounts.get()
-        else:
-            return cstring("Could not parse amounts")
         var total: float
-        try:
-            total = parseFloat($total_input)
-        except ValueError:
-            return cstring("Could not parse total")
         var tax_rates: seq[float]
-        let maybe_taxes = parseFloatSeq($tax_rates_input)
-        if maybe_taxes.isSome:
-            tax_rates = maybe_taxes.get()
+        let parsed = parse_input($amounts_input, $total_input, $tax_rates_input)
+        if parsed.isOk:
+            (amounts, total, tax_rates) = parsed.get()
+            let message = "Results:\n" & calculate_taxes(amounts, total, tax_rates)
+            return cstring(message)
         else:
-            return cstring("Could not parse tax rates")
-        let message = "Results:\n" & calculate_taxes(amounts, total, tax_rates)
-        return cstring(message)
-
+            let message: string = "Could not parse input:\n" & parsed.error()
+            return cstring(message)
