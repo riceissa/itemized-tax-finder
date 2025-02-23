@@ -5,6 +5,7 @@ import std/parseopt
 import std/options
 import strutils
 import math
+import results
 
 type
     TaxedValue = object
@@ -62,14 +63,35 @@ proc calculate_taxes(amounts: seq[float], total: float, tax_rates: seq[float]): 
             if abs(hist_sum - total) < 0.01 - 0.00001:
                 result &= fmt"  * {hist}" & "\n"
 
-func parseFloatSeq(input: string): Option[seq[float]] =
+func parseFloatSeq(input: string): Result[seq[float], string] =
     var res: seq[float] = @[]
     for x in input.split(","):
         try:
             res.add(parseFloat(x.strip()))
-        except ValueError:
-            return none(seq[float])
-    return some(res)
+        except ValueError as e:
+            return err(e.msg)
+    return ok(res)
+
+func parseSingleFloat(input: string): Result[float, string] =
+    try:
+        let parsed: float = parseFloat(input.strip())
+        return ok(parsed)
+    except ValueError as e:
+        return err(e.msg)
+
+# func parse_amounts(input: string): Result[float, string] =
+#     let maybe_amounts = parseFloatSeq(amounts_input)
+#     if maybe_amounts.isSome:
+#         amounts = maybe_amounts.get()
+#     else:
+#         return err("Could not parse amounts")
+
+func parse_input(amounts_input, total_input, tax_rates_input: string): Result[(seq[float], float, seq[float]), string] =
+    let amounts = ?parseFloatSeq(amounts_input)
+    let total = ?parseSingleFloat(total_input)
+    let tax_rates = ?parseFloatSeq(tax_rates_input)
+    let res = ok((amounts, total, tax_rates))
+    return res
 
 when not defined(js):
     proc main() =
@@ -103,24 +125,14 @@ when not defined(js):
         if amounts_input == "" or total_input == "":
             echo "Did not find amounts or total."
         var amounts: seq[float]
-        let maybe_amounts = parseFloatSeq(amounts_input)
-        if maybe_amounts.isSome:
-            amounts = maybe_amounts.get()
-        else:
-            echo "Could not parse amounts"
-            quit()
         var total: float
-        try:
-            total = parseFloat(total_input)
-        except ValueError:
-            echo "Could not parse total"
-            quit()
         var tax_rates: seq[float]
-        let maybe_taxes = parseFloatSeq(tax_rates_input)
-        if maybe_taxes.isSome:
-            tax_rates = maybe_taxes.get()
+        let parsed = parse_input(amounts_input, total_input, tax_rates_input)
+        if parsed.isOk:
+            (amounts, total, tax_rates) = parsed.get()
         else:
-            echo "Could not parse tax rates"
+            echo "Could not parse input:"
+            echo parsed.error()
             quit()
 
         # Values to be modified by the user:
