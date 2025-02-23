@@ -1,6 +1,8 @@
 #!/usr/bin/nim r
 
 import std/strformat
+import std/parseopt
+import std/options
 import strutils
 import math
 
@@ -60,15 +62,60 @@ proc calculate_taxes(amounts: seq[float], total: float): string =
             if abs(hist_sum - total) < 0.01 - 0.00001:
                 result &= fmt"  * {hist}" & "\n"
 
+func parseFloatSeq(input: string): Option[seq[float]] =
+    var res: seq[float] = @[]
+    for x in input.split(","):
+        try:
+            res.add(parseFloat(x.strip()))
+        except ValueError:
+            return none(seq[float])
+    return some(res)
+
 proc main() =
+    var amounts_input: string = ""
+    var total_input: string = ""
+    for kind, key, val in getopt():
+        case kind
+        of cmdEnd: break
+        of cmdShortOption, cmdLongOption:
+            if val == "":
+                if key == "amounts":
+                    echo "Amounts must be provided using e.g. --amounts=22.09,81.89,16.24"
+                elif key == "total":
+                    echo "Total must be provided using e.g. --total=124.13"
+                else:
+                    echo "Unknown option: ", key
+            else:
+                if key == "amounts":
+                    amounts_input = val
+                elif key == "total":
+                    total_input = val
+                else:
+                    echo "Unknown option and value: ", key, ", ", val
+        of cmdArgument:
+            echo "Argument: ", key
+    if amounts_input == "" or total_input == "":
+        echo "Did not find amounts or total."
+    var amounts: seq[float]
+    let maybe_amounts = parseFloatSeq(amounts_input)
+    if maybe_amounts.isSome:
+        amounts = maybe_amounts.get()
+    else:
+        echo "Could not parse amounts"
+        quit()
+    var total: float
+    try:
+        total = parseFloat(total_input)
+    except ValueError:
+        echo "Could not parse total"
+        quit()
+
     # Values to be modified by the user:
     # 1. amounts: This is the list of individual amounts, NOT including tax.
-    let amounts = @[22.09, 81.89, 16.24]
 
     # 2. totalAmount: This is the amount that was actually paid, and includes tax.
     #    For example, it might be the amount that appears on your credit card
     #    statement.
-    let total = 124.13
 
     # Nothing else in this file should be edited by the user.
 
