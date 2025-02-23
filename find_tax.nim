@@ -114,9 +114,11 @@ when not defined(js):
                     else:
                         echo "Unknown option and value: ", key, ", ", val
             of cmdArgument:
-                echo "Argument: ", key
-        if amounts_input == "" or total_input == "":
-            echo "Did not find amounts or total."
+                echo "Unknown argument: ", key, ". Did you accidentally put an extra space between the comma-separated numbers?"
+        if amounts_input == "" or total_input == "" or tax_rates_input == "":
+            echo "You must pass in all three of amounts, total, and tax rates using the flags (the values are for example) --amounts=22.09,81.89,16.24 --total=124.13 --tax-rates=1.100,1.101,1.102,1.103"
+            quit()
+
         var amounts: seq[float]
         var total: float
         var tax_rates: seq[float]
