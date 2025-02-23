@@ -5999,33 +5999,33 @@ function runJS(amounts_input_452985392, total_input_452985393, tax_rates_input_4
   var F = {procname: "find_tax.runJS", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
   framePtr = F;
   BeforeRet: do {
-    F.line = 142;
-    var amounts_452985396 = [];
-    F.line = 143;
-    var total_452985397 = 0.0;
     F.line = 144;
-    var tax_rates_452985398 = [];
+    var amounts_452985396 = [];
     F.line = 145;
+    var total_452985397 = 0.0;
+    F.line = 146;
+    var tax_rates_452985398 = [];
+    F.line = 147;
     var parsed_452985399 = parse_input_452985324(cstrToNimstr(amounts_input_452985392), cstrToNimstr(total_input_452985393), cstrToNimstr(tax_rates_input_452985394));
     if (parsed_452985399.oResultPrivate) {
-    F.line = 147;
-    var __452985401 = nimCopy(null, value_452985440(parsed_452985399), NTI452985183);
-    F.line = 147;
-    amounts_452985396 = nimCopy(null, __452985401["Field0"], NTI452985184);
-    F.line = 147;
-    total_452985397 = __452985401["Field1"];
-    F.line = 147;
-    tax_rates_452985398 = nimCopy(null, __452985401["Field2"], NTI452985185);
-    F.line = 148;
-    var message_452985451 = (makeNimstrLit("Results:\x0A") || []).concat(calculate_taxes_452985092(amounts_452985396, total_452985397, tax_rates_452985398) || []);
     F.line = 149;
+    var __452985401 = nimCopy(null, value_452985440(parsed_452985399), NTI452985183);
+    F.line = 149;
+    amounts_452985396 = nimCopy(null, __452985401["Field0"], NTI452985184);
+    F.line = 149;
+    total_452985397 = __452985401["Field1"];
+    F.line = 149;
+    tax_rates_452985398 = nimCopy(null, __452985401["Field2"], NTI452985185);
+    F.line = 150;
+    var message_452985451 = (makeNimstrLit("Results:\x0A") || []).concat(calculate_taxes_452985092(amounts_452985396, total_452985397, tax_rates_452985398) || []);
+    F.line = 151;
     result_452985395 = toJSStr(message_452985451);
     break BeforeRet;
     }
     else {
-      F.line = 151;
+      F.line = 153;
       var message_452985680 = (makeNimstrLit("Could not parse input:\x0A") || []).concat(error_452985461(parsed_452985399) || []);
-      F.line = 152;
+      F.line = 154;
       result_452985395 = toJSStr(message_452985680);
       break BeforeRet;
     }
