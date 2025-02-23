@@ -79,13 +79,6 @@ func parseSingleFloat(input: string): Result[float, string] =
     except ValueError as e:
         return err(e.msg)
 
-# func parse_amounts(input: string): Result[float, string] =
-#     let maybe_amounts = parseFloatSeq(amounts_input)
-#     if maybe_amounts.isSome:
-#         amounts = maybe_amounts.get()
-#     else:
-#         return err("Could not parse amounts")
-
 func parse_input(amounts_input, total_input, tax_rates_input: string): Result[(seq[float], float, seq[float]), string] =
     let amounts = ?parseFloatSeq(amounts_input)
     let total = ?parseSingleFloat(total_input)
@@ -134,15 +127,6 @@ when not defined(js):
             echo "Could not parse input:"
             echo parsed.error()
             quit()
-
-        # Values to be modified by the user:
-        # 1. amounts: This is the list of individual amounts, NOT including tax.
-
-        # 2. totalAmount: This is the amount that was actually paid, and includes tax.
-        #    For example, it might be the amount that appears on your credit card
-        #    statement.
-
-        # Nothing else in this file should be edited by the user.
 
         echo ""
         echo "====================================="
