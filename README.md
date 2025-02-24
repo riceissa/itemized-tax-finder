@@ -7,7 +7,7 @@ which compiles to both JavaScript and an executable.
 You can compile the project with:
 
 ```
-$ make
+make
 ```
 
 and run the executable with e.g.:
