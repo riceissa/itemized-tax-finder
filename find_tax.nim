@@ -81,12 +81,36 @@ func parseSingleFloat(input: string): Result[float, string] =
     except ValueError as e:
         return err(e.msg)
 
-func parse_input(amounts_input, total_input, tax_rates_input: string): Result[(seq[float], float, seq[float]), string] =
+func parse_input_and_calc(amounts_input, total_input, tax_rates_input: string): Result[string, string] =
+    # It would be better if I could have the return type of this function be
+    # just string, and then inside this function use do-notation to write
+    # something like:
+    #     let res = do
+    #         amounts <- parseFloatSeq(amounts_input)
+    #         total <- parseSingleFloat(total_input)
+    #         tax_rates <- parseFloatSeq(tax_rates_input)
+    #         ok(calculate_taxes(amounts, total, tax_rates))
+    #     if res.isOk:
+    #         return res.get()
+    #     else:
+    #         return res.error()
+    # Unfortunately, I don't think this is possible in Nim using the Results
+    # package. That's because the early return operator ? will just return out
+    # of the *whole function*, rather than just doing an early return out to
+    # the "do-block" portion. So I need to have two different functions (this
+    # one and unpack_message below) just to contain the ? operator. This
+    # function is basically the do-block, and unpack_message is the outer
+    # function that uses the do-block's result.
     let amounts = ?parseFloatSeq(amounts_input)
     let total = ?parseSingleFloat(total_input)
     let tax_rates = ?parseFloatSeq(tax_rates_input)
-    let res = ok((amounts, total, tax_rates))
-    return res
+    return ok(calculate_taxes(amounts, total, tax_rates))
+
+func unpack_message(message: Result[string, string]): string =
+    if message.isOk:
+        return "Results:\n" & message.get()
+    else:
+        return "Could not parse input:\n" & message.error()
 
 when not defined(js):
     proc main() =
@@ -121,28 +145,11 @@ when not defined(js):
             echo "You must pass in all three of amounts, total, and tax rates using the flags (the values are for example) --amounts=22.09,81.89,16.24 --total=124.13 --tax-rates=1.100,1.101,1.102,1.103"
             quit()
 
-        let parsed = parse_input(amounts_input, total_input, tax_rates_input)
-        if not parsed.isOk:
-            echo "Could not parse input:"
-            echo parsed.error()
-            quit()
-
-        echo ""
-        echo "====================================="
-        echo "Results:"
-        echo ""
-        let (amounts, total, tax_rates) = parsed.get()
-        echo calculate_taxes(amounts, total, tax_rates)
+        echo unpack_message(parse_input_and_calc(amounts_input, total_input, tax_rates_input))
 
     if isMainModule:
         main()
 
 when defined(js):
     proc runJS(amounts_input: cstring, total_input: cstring, tax_rates_input: cstring): cstring {.exportc} =
-        let parsed = parse_input($amounts_input, $total_input, $tax_rates_input)
-        if not parsed.isOk:
-            let message: string = "Could not parse input:\n" & parsed.error()
-            return cstring(message)
-        let (amounts, total, tax_rates) = parsed.get()
-        let message = "Results:\n" & calculate_taxes(amounts, total, tax_rates)
-        return cstring(message)
+        return cstring(unpack_message(parse_input_and_calc($amounts_input, $total_input, $tax_rates_input)))
