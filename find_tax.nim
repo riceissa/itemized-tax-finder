@@ -121,13 +121,8 @@ when not defined(js):
             echo "You must pass in all three of amounts, total, and tax rates using the flags (the values are for example) --amounts=22.09,81.89,16.24 --total=124.13 --tax-rates=1.100,1.101,1.102,1.103"
             quit()
 
-        var amounts: seq[float]
-        var total: float
-        var tax_rates: seq[float]
         let parsed = parse_input(amounts_input, total_input, tax_rates_input)
-        if parsed.isOk:
-            (amounts, total, tax_rates) = parsed.get()
-        else:
+        if not parsed.isOk:
             echo "Could not parse input:"
             echo parsed.error()
             quit()
@@ -136,6 +131,7 @@ when not defined(js):
         echo "====================================="
         echo "Results:"
         echo ""
+        let (amounts, total, tax_rates) = parsed.get()
         echo calculate_taxes(amounts, total, tax_rates)
 
     if isMainModule:
@@ -143,14 +139,10 @@ when not defined(js):
 
 when defined(js):
     proc runJS(amounts_input: cstring, total_input: cstring, tax_rates_input: cstring): cstring {.exportc} =
-        var amounts: seq[float]
-        var total: float
-        var tax_rates: seq[float]
         let parsed = parse_input($amounts_input, $total_input, $tax_rates_input)
-        if parsed.isOk:
-            (amounts, total, tax_rates) = parsed.get()
-            let message = "Results:\n" & calculate_taxes(amounts, total, tax_rates)
-            return cstring(message)
-        else:
+        if not parsed.isOk:
             let message: string = "Could not parse input:\n" & parsed.error()
             return cstring(message)
+        let (amounts, total, tax_rates) = parsed.get()
+        let message = "Results:\n" & calculate_taxes(amounts, total, tax_rates)
+        return cstring(message)
