@@ -9,7 +9,7 @@ used in the browser) or a program you can run on the command line._
 You can compile the project with:
 
 ```
-make
+make  # compiles both ./find_tax executable and docs/find_tax.js
 ```
 
 and run the executable with e.g.:
