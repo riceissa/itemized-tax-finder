@@ -65,7 +65,7 @@ proc calculate_taxes(amounts: seq[float], total: float, tax_rates: seq[float]): 
                     result &= fmt": total was {hist_sum}"
                     result &= "\n"
 
-func parseFloatSeq(input: string): Result[seq[float], string] =
+func parse_float_seq(input: string): Result[seq[float], string] =
     var res: seq[float] = @[]
     for x in input.split(","):
         try:
@@ -74,7 +74,7 @@ func parseFloatSeq(input: string): Result[seq[float], string] =
             return err(e.msg)
     return ok(res)
 
-func parseSingleFloat(input: string): Result[float, string] =
+func parse_single_float(input: string): Result[float, string] =
     try:
         let parsed: float = parseFloat(input.strip())
         return ok(parsed)
@@ -86,9 +86,9 @@ func parse_input_and_calc(amounts_input, total_input, tax_rates_input: string): 
     # just string, and then inside this function use do-notation to write
     # something like:
     #     let res = do
-    #         amounts <- parseFloatSeq(amounts_input)
-    #         total <- parseSingleFloat(total_input)
-    #         tax_rates <- parseFloatSeq(tax_rates_input)
+    #         amounts <- parse_float_seq(amounts_input)
+    #         total <- parse_single_float(total_input)
+    #         tax_rates <- parse_float_seq(tax_rates_input)
     #         ok(calculate_taxes(amounts, total, tax_rates))
     #     if res.isOk:
     #         return res.get()
@@ -101,9 +101,9 @@ func parse_input_and_calc(amounts_input, total_input, tax_rates_input: string): 
     # one and unpack_message below) just to contain the ? operator. This
     # function is basically the do-block, and unpack_message is the outer
     # function that uses the do-block's result.
-    let amounts = ?parseFloatSeq(amounts_input)
-    let total = ?parseSingleFloat(total_input)
-    let tax_rates = ?parseFloatSeq(tax_rates_input)
+    let amounts = ?parse_float_seq(amounts_input)
+    let total = ?parse_single_float(total_input)
+    let tax_rates = ?parse_float_seq(tax_rates_input)
     return ok(calculate_taxes(amounts, total, tax_rates))
 
 func unpack_message(message: Result[string, string]): string =
