@@ -66,7 +66,7 @@
     years, so trying a few different values is sometimes necessary):</label>
     <input type="text" id="rates" value="1.100, 1.101, 1.102, 1.103">
 
-    <button onclick="runTaxCalc()">Calculate</button>
+    <button onclick="calculateAndUpdateURL()">Calculate</button>
 
     <p>(<a href="https://github.com/riceissa/itemized-tax-finder/">Project source on GitHub</a>.)</p>
 
@@ -74,6 +74,41 @@
     <pre id="results"></pre>
 
     <script>
+        function loadParamsFromURL() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('amounts')) {
+                document.getElementById('amounts').value = urlParams.get('amounts').split(/\s+/).join(", ");
+            }
+            if (urlParams.has('total')) {
+                document.getElementById('total').value = urlParams.get('total');
+            }
+            if (urlParams.has('tax_rates')) {
+                document.getElementById('rates').value = urlParams.get('tax_rates').split(/\s+/).join(", ");
+            }
+            if (urlParams.has('amounts') && urlParams.has('total') && urlParams.has('tax_rates')) {
+                runTaxCalc();
+            }
+        }
+
+        function updateURLWithParams() {
+            const amounts = document.getElementById('amounts').value;
+            const total = document.getElementById('total').value;
+            const rates = document.getElementById('rates').value;
+
+            const url = new URL(window.location.href);
+            url.search = '';
+            url.searchParams.set('amounts', amounts.split(",").map(x => x.trim()).join(" "));
+            url.searchParams.set('total', total.trim());
+            url.searchParams.set('tax_rates', rates.split(",").map(x => x.trim()).join(" "));
+            // Update the URL without reloading the page
+            window.history.pushState({}, '', url);
+        }
+
+        function calculateAndUpdateURL() {
+            updateURLWithParams();
+            runTaxCalc();
+        }
+
         function runTaxCalc() {
             if (typeof runJS !== "function") {
                 document.getElementById("results").textContent = "Error: Calculator not loaded yet.";
@@ -89,6 +124,9 @@
                 document.getElementById("results").textContent = "Error: " + error.message;
             }
         }
+
+        // Load parameters from URL when the page loads
+        window.onload = loadParamsFromURL;
     </script>
 </body>
 </html>
