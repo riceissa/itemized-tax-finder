@@ -1,5 +1,7 @@
 #!/usr/bin/nim r
 
+{.experimental: "strictDefs".}
+
 import std/strformat
 import std/parseopt
 import std/options
