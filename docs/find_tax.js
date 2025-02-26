@@ -1675,20 +1675,20 @@ function HEX24__find95tax_u96(t_p0) {
   var F = {procname: "find_tax.$", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
   framePtr = F;
   BeforeRet: {
-    F.line = 30;
+    F.line = 32;
     F.filename = "find_tax.nim";
     Label1: {
-      F.line = 30;
+      F.line = 32;
       var fmtRes_536871019 = [mnewString(0)];
-      F.line = 30;
+      F.line = 32;
       fmtRes_536871019[0].push.apply(fmtRes_536871019[0], [40,36]);;
-      F.line = 30;
+      F.line = 32;
       formatValue__find95tax_u113(fmtRes_536871019, 0, t_p0.value);
-      F.line = 30;
+      F.line = 32;
       fmtRes_536871019[0].push.apply(fmtRes_536871019[0], [32,119,105,116,104,32,116,97,120,32,120]);;
-      F.line = 30;
+      F.line = 32;
       formatValue__find95tax_u113(fmtRes_536871019, 0, t_p0.tax);
-      F.line = 30;
+      F.line = 32;
       fmtRes_536871019[0].push.apply(fmtRes_536871019[0], [41]);;
     };
     result_536871010 = nimCopy(null, fmtRes_536871019[0], NTI33554449);
@@ -1749,7 +1749,7 @@ function HEX24__find95tax_u197(hist_p0) {
 
   var F = {procname: "find_tax.$", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
   framePtr = F;
-    F.line = 42;
+    F.line = 44;
     F.filename = "find_tax.nim";
     result_536871111 = nimCopy(null, join__find95tax_u200(hist_p0.hist, [44,32]), NTI33554449);
   framePtr = F.prev;
@@ -2034,16 +2034,16 @@ function pack_message__find95tax_u732(calculated_p0) {
   framePtr = F;
   BeforeRet: {
     if (calculated_p0.oResultPrivate) {
-    F.line = 114;
+    F.line = 116;
     F.filename = "find_tax.nim";
     var message_536871650 = [82,101,115,117,108,116,115,58,10];
     Label1: {
-      F.line = 115;
+      F.line = 117;
       var res_536871738 = ({hist: ({hist: []}), round_before_summing: false, sum: 0.0});
       F.line = 247;
       F.filename = "iterators.nim";
       var colontmp__536872000 = [];
-      F.line = 115;
+      F.line = 117;
       F.filename = "find_tax.nim";
       colontmp__536872000 = value__find95tax_u777(calculated_p0);
       F.line = 249;
@@ -2055,12 +2055,12 @@ function pack_message__find95tax_u732(calculated_p0) {
         F.line = 251;
           Label3: while (true) {
           if (!(i_536872002 < L_536872003)) break Label3;
-            F.line = 115;
+            F.line = 117;
             F.filename = "find_tax.nim";
             res_536871738 = colontmp__536872000[chckIndx(i_536872002, 0, (colontmp__536872000).length - 1)];
-            F.line = 116;
+            F.line = 118;
             message_536871650.push.apply(message_536871650, [32,32,42]);;
-            F.line = 117;
+            F.line = 119;
             if (res_536871738.round_before_summing) {
             Temporary4 = [121,101,115];
             }
@@ -2069,27 +2069,27 @@ function pack_message__find95tax_u732(calculated_p0) {
             }
             
             message_536871650.push.apply(message_536871650, ([32,114,111,117,110,100,32,98,101,102,111,114,101,32,115,117,109,109,105,110,103,63,32]).concat(Temporary4));;
-            F.line = 118;
+            F.line = 120;
             Label5: {
-              F.line = 118;
+              F.line = 120;
               var fmtRes_536871743 = [mnewString(0)];
-              F.line = 118;
+              F.line = 120;
               fmtRes_536871743[0].push.apply(fmtRes_536871743[0], [44,32]);;
-              F.line = 118;
+              F.line = 120;
               formatValue__find95tax_u832(fmtRes_536871743, 0, res_536871738.hist);
             };
             message_536871650.push.apply(message_536871650, fmtRes_536871743[0]);;
-            F.line = 119;
+            F.line = 121;
             Label6: {
-              F.line = 119;
+              F.line = 121;
               var fmtRes_536871767 = [mnewString(0)];
-              F.line = 119;
+              F.line = 121;
               fmtRes_536871767[0].push.apply(fmtRes_536871767[0], [58,32,116,111,116,97,108,32,119,97,115,32]);;
-              F.line = 119;
+              F.line = 121;
               formatValue__find95tax_u113(fmtRes_536871767, 0, res_536871738.sum);
             };
             message_536871650.push.apply(message_536871650, fmtRes_536871767[0]);;
-            F.line = 120;
+            F.line = 122;
             message_536871650.push.apply(message_536871650, [10]);;
             F.line = 13;
             F.filename = "iterators.nim";
@@ -2102,13 +2102,13 @@ function pack_message__find95tax_u732(calculated_p0) {
           }
       };
     };
-    F.line = 121;
+    F.line = 123;
     F.filename = "find_tax.nim";
     result_536871648 = nimCopy(null, message_536871650, NTI33554449);
     break BeforeRet;
     }
     else {
-      F.line = 123;
+      F.line = 125;
       result_536871648 = nimCopy(null, ([67,111,117,108,100,32,110,111,116,32,112,97,114,115,101,32,105,110,112,117,116,58,10]).concat(error__find95tax_u871(calculated_p0)), NTI33554449);
       break BeforeRet;
     }
@@ -2361,11 +2361,11 @@ function parse_float_seq__find95tax_u549(input_p0) {
   var F = {procname: "find_tax.parse_float_seq", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
   framePtr = F;
   BeforeRet: {
-    F.line = 68;
+    F.line = 70;
     F.filename = "find_tax.nim";
     var res_536871475 = [];
     Label1: {
-      F.line = 69;
+      F.line = 71;
       var x_536871476 = [];
       F.line = 535;
       F.filename = "strutils.nim";
@@ -2393,13 +2393,13 @@ function parse_float_seq__find95tax_u549(input_p0) {
             lastHEX60gensym41_536872039 = (input_p0).length;
             }
             
-            F.line = 69;
+            F.line = 71;
             F.filename = "find_tax.nim";
             x_536871476 = substr__system_u3700(input_p0, firstHEX60gensym41_536872042, subInt(lastHEX60gensym41_536872039, 1));
-            F.line = 70;
+            F.line = 72;
 ++excHandler;
             try {
-            F.line = 71;
+            F.line = 73;
             res_536871475.push(nsuParseFloat(nsuStrip(x_536871476, true, true, ConstSet13)));;
 --excHandler;
 } catch (EXCEPTION) {
@@ -2408,9 +2408,9 @@ function parse_float_seq__find95tax_u549(input_p0) {
  --excHandler;
             framePtr = F;
             if (lastJSError && (isObj(lastJSError.m_type, NTI134217746))) {
-            F.line = 73;
+            F.line = 75;
             var e_536871481 = getCurrentException();
-            F.line = 73;
+            F.line = 75;
             result_536871470 = nimCopy(result_536871470, {oResultPrivate: false, eResultPrivate: nimCopy(null, e_536871481.message, NTI33554449), vResultPrivate: []}, NTI536871265);
             break BeforeRet;
             }
@@ -2434,7 +2434,7 @@ function parse_float_seq__find95tax_u549(input_p0) {
           }
       };
     };
-    F.line = 74;
+    F.line = 76;
     F.filename = "find_tax.nim";
     result_536871470 = nimCopy(result_536871470, {oResultPrivate: true, vResultPrivate: nimCopy(null, res_536871475, NTI536871270), eResultPrivate: []}, NTI536871265);
     break BeforeRet;
@@ -2451,13 +2451,13 @@ function parse_single_float__find95tax_u620(input_p0) {
   var F = {procname: "find_tax.parse_single_float", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
   framePtr = F;
   BeforeRet: {
-    F.line = 77;
+    F.line = 79;
     F.filename = "find_tax.nim";
 ++excHandler;
     try {
-    F.line = 78;
+    F.line = 80;
     var parsed_536871542 = nsuParseFloat(nsuStrip(input_p0, true, true, ConstSet16));
-    F.line = 79;
+    F.line = 81;
     result_536871541 = nimCopy(result_536871541, {oResultPrivate: true, vResultPrivate: parsed_536871542, eResultPrivate: []}, NTI536871314);
     break BeforeRet;
 --excHandler;
@@ -2467,9 +2467,9 @@ function parse_single_float__find95tax_u620(input_p0) {
  --excHandler;
     framePtr = F;
     if (lastJSError && (isObj(lastJSError.m_type, NTI134217746))) {
-    F.line = 81;
+    F.line = 83;
     var e_536871547 = getCurrentException();
-    F.line = 81;
+    F.line = 83;
     result_536871541 = nimCopy(result_536871541, {oResultPrivate: false, eResultPrivate: nimCopy(null, e_536871547.message, NTI33554449), vResultPrivate: 0.0}, NTI536871314);
     break BeforeRet;
     }
@@ -2493,7 +2493,7 @@ function newHistory__find95tax_u16() {
   var F = {procname: "find_tax.newHistory", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
   framePtr = F;
   BeforeRet: {
-    F.line = 22;
+    F.line = 24;
     F.filename = "find_tax.nim";
     result_536870929 = nimCopy(result_536870929, {hist: []}, NTI536870916);
     break BeforeRet;
@@ -2510,13 +2510,13 @@ function with__find95tax_u70(hist_p0, v_p1) {
   var F = {procname: "find_tax.with", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
   framePtr = F;
   BeforeRet: {
-    F.line = 25;
+    F.line = 27;
     F.filename = "find_tax.nim";
     var newlist_536870986 = nimCopy(null, hist_p0.hist, NTI536870918);
-    F.line = 26;
+    F.line = 28;
     var Temporary1 = nimCopy(null, v_p1, NTI536870915);
     newlist_536870986.push(Temporary1);;
-    F.line = 27;
+    F.line = 29;
     result_536870985 = nimCopy(result_536870985, {hist: nimCopy(null, newlist_536870986, NTI536870918)}, NTI536870916);
     break BeforeRet;
   };
@@ -2589,11 +2589,11 @@ function sum__find95tax_u128(hist_p0, round_before_summing_p1) {
   var F = {procname: "find_tax.sum", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
   framePtr = F;
   BeforeRet: {
-    F.line = 33;
+    F.line = 35;
     F.filename = "find_tax.nim";
     var total_536871044 = [0.0];
     Label1: {
-      F.line = 34;
+      F.line = 36;
       var v_536871067 = ({value: 0.0, tax: 0.0});
       F.line = 249;
       F.filename = "iterators.nim";
@@ -2604,15 +2604,15 @@ function sum__find95tax_u128(hist_p0, round_before_summing_p1) {
         F.line = 251;
           Label3: while (true) {
           if (!(i_536872086 < L_536872087)) break Label3;
-            F.line = 34;
+            F.line = 36;
             F.filename = "find_tax.nim";
             v_536871067 = hist_p0.hist[chckIndx(i_536872086, 0, (hist_p0.hist).length - 1)];
             if (round_before_summing_p1) {
-            F.line = 36;
+            F.line = 38;
             HEX2BHEX3D__pureZstrutils_u2340(total_536871044, 0, round__find95tax_u156((v_536871067.value * v_536871067.tax), 2));
             }
             else {
-              F.line = 38;
+              F.line = 40;
             HEX2BHEX3D__pureZstrutils_u2340(total_536871044, 0, (v_536871067.value * v_536871067.tax));
             }
             
@@ -2627,7 +2627,7 @@ function sum__find95tax_u128(hist_p0, round_before_summing_p1) {
           }
       };
     };
-    F.line = 39;
+    F.line = 41;
     F.filename = "find_tax.nim";
     result_536871043 = total_536871044[0];
     break BeforeRet;
@@ -2654,11 +2654,11 @@ function calculate_taxes__find95tax_u255(amounts_p0, total_p1, tax_rates_p2) {
 
   var F = {procname: "find_tax.calculate_taxes", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
   framePtr = F;
-    F.line = 45;
+    F.line = 47;
     F.filename = "find_tax.nim";
     result_536871171 = nimCopy(null, [], NTI536871071);
     Label1: {
-      F.line = 46;
+      F.line = 48;
       var t_536871198 = 0.0;
       F.line = 249;
       F.filename = "iterators.nim";
@@ -2669,13 +2669,13 @@ function calculate_taxes__find95tax_u255(amounts_p0, total_p1, tax_rates_p2) {
         F.line = 251;
           Label3: while (true) {
           if (!(i_536872081 < L_536872082)) break Label3;
-            F.line = 46;
+            F.line = 48;
             F.filename = "find_tax.nim";
             t_536871198 = tax_rates_p2[chckIndx(i_536872081, 0, (tax_rates_p2).length - 1)];
-            F.line = 53;
+            F.line = 55;
             var possible_hists_536871203 = [newHistory__find95tax_u16()];
             Label4: {
-              F.line = 54;
+              F.line = 56;
               var v_536871207 = 0.0;
               F.line = 249;
               F.filename = "iterators.nim";
@@ -2686,13 +2686,13 @@ function calculate_taxes__find95tax_u255(amounts_p0, total_p1, tax_rates_p2) {
                 F.line = 251;
                   Label6: while (true) {
                   if (!(i_536872070 < L_536872071)) break Label6;
-                    F.line = 54;
+                    F.line = 56;
                     F.filename = "find_tax.nim";
                     v_536871207 = amounts_p0[chckIndx(i_536872070, 0, (amounts_p0).length - 1)];
-                    F.line = 55;
+                    F.line = 57;
                     var newhists_536871212 = [];
                     Label7: {
-                      F.line = 56;
+                      F.line = 58;
                       var hist_536871235 = ({hist: []});
                       F.line = 249;
                       F.filename = "iterators.nim";
@@ -2703,12 +2703,12 @@ function calculate_taxes__find95tax_u255(amounts_p0, total_p1, tax_rates_p2) {
                         F.line = 251;
                           Label9: while (true) {
                           if (!(i_536872066 < L_536872067)) break Label9;
-                            F.line = 56;
+                            F.line = 58;
                             F.filename = "find_tax.nim";
                             hist_536871235 = possible_hists_536871203[chckIndx(i_536872066, 0, (possible_hists_536871203).length - 1)];
-                            F.line = 58;
+                            F.line = 60;
                             newhists_536871212.push(with__find95tax_u70(hist_536871235, {value: v_536871207, tax: 1.0}));;
-                            F.line = 59;
+                            F.line = 61;
                             newhists_536871212.push(with__find95tax_u70(hist_536871235, {value: v_536871207, tax: t_536871198}));;
                             F.line = 13;
                             F.filename = "iterators.nim";
@@ -2721,7 +2721,7 @@ function calculate_taxes__find95tax_u255(amounts_p0, total_p1, tax_rates_p2) {
                           }
                       };
                     };
-                    F.line = 60;
+                    F.line = 62;
                     F.filename = "find_tax.nim";
                     possible_hists_536871203 = nimCopy(null, newhists_536871212, NTI536871099);
                     F.line = 13;
@@ -2736,7 +2736,7 @@ function calculate_taxes__find95tax_u255(amounts_p0, total_p1, tax_rates_p2) {
               };
             };
             Label10: {
-              F.line = 61;
+              F.line = 63;
               F.filename = "find_tax.nim";
               var hist_536871247 = ({hist: []});
               F.line = 249;
@@ -2748,11 +2748,11 @@ function calculate_taxes__find95tax_u255(amounts_p0, total_p1, tax_rates_p2) {
                 F.line = 251;
                   Label12: while (true) {
                   if (!(i_536872078 < L_536872079)) break Label12;
-                    F.line = 61;
+                    F.line = 63;
                     F.filename = "find_tax.nim";
                     hist_536871247 = possible_hists_536871203[chckIndx(i_536872078, 0, (possible_hists_536871203).length - 1)];
                     Label13: {
-                      F.line = 62;
+                      F.line = 64;
                       var round_before_summing_536871290 = false;
                       F.line = 43;
                       F.filename = "iterators.nim";
@@ -2761,13 +2761,13 @@ function calculate_taxes__find95tax_u255(amounts_p0, total_p1, tax_rates_p2) {
                         F.line = 44;
                           Label15: while (true) {
                           if (!true) break Label15;
-                            F.line = 62;
+                            F.line = 64;
                             F.filename = "find_tax.nim";
                             round_before_summing_536871290 = (Temporary16 = new Uint8Array([true, false]), Temporary16)[chckIndx(i_536872076, 0, (Temporary16).length - 1)];
-                            F.line = 63;
+                            F.line = 65;
                             var hist_sum_536871291 = sum__find95tax_u128(hist_536871247, round_before_summing_536871290);
                             if ((abs__pureZmath_u237((hist_sum_536871291 - total_p1)) < 0.00999)) {
-                            F.line = 65;
+                            F.line = 67;
                             result_536871171.push({hist: nimCopy(null, hist_536871247, NTI536870916), round_before_summing: round_before_summing_536871290, sum: hist_sum_536871291});;
                             }
                             
@@ -2824,12 +2824,12 @@ function parse_input_and_calc__find95tax_u666(amounts_input_p0, total_input_p1, 
   var F = {procname: "find_tax.parse_input_and_calc", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
   framePtr = F;
   BeforeRet: {
-    F.line = 107;
+    F.line = 109;
     F.filename = "find_tax.nim";
     F.line = 1544;
     F.filename = "results.nim";
     var vHEX60gensym15_536871593 = parse_float_seq__find95tax_u549(amounts_input_p0);
-    F.line = 107;
+    F.line = 109;
     F.filename = "find_tax.nim";
     switch (vHEX60gensym15_536871593.oResultPrivate) {
     case false:
@@ -2850,12 +2850,12 @@ function parse_input_and_calc__find95tax_u666(amounts_input_p0, total_input_p1, 
       break;
     }
     var amounts_536871597 = nimCopy(null, Temporary1, NTI536871258);
-    F.line = 108;
+    F.line = 110;
     F.filename = "find_tax.nim";
     F.line = 1544;
     F.filename = "results.nim";
     var vHEX60gensym17_536871601 = parse_single_float__find95tax_u620(total_input_p1);
-    F.line = 108;
+    F.line = 110;
     F.filename = "find_tax.nim";
     switch (vHEX60gensym17_536871601.oResultPrivate) {
     case false:
@@ -2876,12 +2876,12 @@ function parse_input_and_calc__find95tax_u666(amounts_input_p0, total_input_p1, 
       break;
     }
     var total_536871605 = Temporary4;
-    F.line = 109;
+    F.line = 111;
     F.filename = "find_tax.nim";
     F.line = 1544;
     F.filename = "results.nim";
     var vHEX60gensym19_536871609 = parse_float_seq__find95tax_u549(tax_rates_input_p2);
-    F.line = 109;
+    F.line = 111;
     F.filename = "find_tax.nim";
     switch (vHEX60gensym19_536871609.oResultPrivate) {
     case false:
@@ -2902,7 +2902,7 @@ function parse_input_and_calc__find95tax_u666(amounts_input_p0, total_input_p1, 
       break;
     }
     var tax_rates_536871613 = nimCopy(null, Temporary7, NTI536871258);
-    F.line = 110;
+    F.line = 112;
     F.filename = "find_tax.nim";
     result_536871589 = nimCopy(result_536871589, {oResultPrivate: true, vResultPrivate: calculate_taxes__find95tax_u255(amounts_536871597, total_536871605, tax_rates_536871613), eResultPrivate: []}, NTI536871343);
     break BeforeRet;
@@ -2919,7 +2919,7 @@ function runJS(amounts_input_p0, total_input_p1, tax_rates_input_p2) {
   var F = {procname: "find_tax.runJS", prev: framePtr, filename: "/home/issa/projects/itemized-tax-finder/find_tax.nim", line: 0};
   framePtr = F;
   BeforeRet: {
-    F.line = 165;
+    F.line = 167;
     F.filename = "find_tax.nim";
     result_536871996 = toJSStr(pack_message__find95tax_u732(parse_input_and_calc__find95tax_u666(cstrToNimstr(amounts_input_p0), cstrToNimstr(total_input_p1), cstrToNimstr(tax_rates_input_p2))));
     break BeforeRet;
