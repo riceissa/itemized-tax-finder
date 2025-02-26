@@ -125,7 +125,7 @@ func pack_message(calculated: Result[seq[FinalResult], string]): string =
         return "Could not parse input:\n" & calculated.error()
 
 when not defined(js):
-    proc main() =
+    proc main() {. raises: [] .} =
         var amounts_input: string = ""
         var total_input: string = ""
         var tax_rates_input: string = ""
@@ -163,5 +163,5 @@ when not defined(js):
         main()
 
 when defined(js):
-    proc runJS(amounts_input: cstring, total_input: cstring, tax_rates_input: cstring): cstring {.exportc} =
+    proc runJS(amounts_input: cstring, total_input: cstring, tax_rates_input: cstring): cstring {. exportc, raises: [] .} =
         return cstring(pack_message(parse_input_and_calc($amounts_input, $total_input, $tax_rates_input)))
